@@ -51,8 +51,8 @@ fixed_value_length = (driverSettings.NsweepSteps + driverSettings.phasesRepetiti
 %fixed_inactive = num2cell( 0 * ones(1, fixed_value_length ) );
 fixed_one = num2cell(-driverSettings.maxVoltage * ones(1, fixed_value_length));
 fixed_zero = num2cell(driverSettings.maxVoltage * ones(1, fixed_value_length));
-dr_pos_sweep = num2cell([D D0]); % sweep from low to high values
-dr_neg_sweep = num2cell([not_D D1]); % sweep from high to low values
+dr_pos_sweep = num2cell([D D1]); % sweep from low to high values
+dr_neg_sweep = num2cell([not_D D0]); % sweep from high to low values
  
 Ndrivers = length(driverSettings.driverNames);
 
@@ -64,7 +64,7 @@ else
 end
 
 
-for ii = 1:Ndrivers
+for ii = 1:Ndrivers    %each ii is a driver
      name = driverSettings.driverNames{ii};
      valuesDr{ii,1} = name; %write dr name in row ii and column 1
             
@@ -73,7 +73,7 @@ for ii = 1:Ndrivers
          valuesDr{ii+Ndrivers,1} = name_c;  %write dr_c name in row ii+Ndrives and column 1, so we obtain Dr1,Dr2,..,DrN,Dr1_c,Dr2_c,..,DrN_c
      end
     
-    for j = 1:Ncomb(1)
+    for j = 1:Ncomb(1)   %every column of driverModes is read and its corresponding array of values is added to the row of valuesDr
         switch driverSettings.driverModes{j,ii}
             case '0'
                 [valuesDr{ii,2+(j-1)*fixed_value_length:j*fixed_value_length+1}] = fixed_zero{:};
@@ -86,7 +86,7 @@ for ii = 1:Ndrivers
         end
 
         if driverSettings.doubleMolDriver 
-            switch driverSettings.driverModes{ii} 
+            switch driverSettings.driverModes{j,ii} 
                 % dr_c has opposite value than dr
                 case '0'
                     [valuesDr{ii+Ndrivers,2+(j-1)*fixed_value_length:j*fixed_value_length+1}] = fixed_one{:};
