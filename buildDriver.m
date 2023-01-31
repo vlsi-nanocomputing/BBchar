@@ -32,14 +32,14 @@ not_D = repelem(not_variation, driverSettings.cycleLength); % each element of no
 
 % Add same values to D and not_D to complain with pipeline
 if (driverSettings.phasesRepetition > 1)
-    flap_array_D = D(end)*ones( 1, (driverSettings.phasesRepetition - 1)*driverSettings.cycleLength );
+    flap_array_D = D(end)*ones( 1, (driverSettings.phasesRepetition - 1)*driverSettings.cycleLength);
     flap_array_not_D = not_D(end)*ones(1,(driverSettings.phasesRepetition - 1)*driverSettings.cycleLength);
     D = [D flap_array_D];
     not_D = [not_D flap_array_not_D];
 end
 
-D0 = driverSettings.maxVoltage * ones(1, (driverSettings.NclockRegions - 1) * driverSettings.clockStep); %useful to complete the pattern in the stack phase with the (Nphases - 1) pReset
-D1 = -driverSettings.maxVoltage * ones(1, (driverSettings.NclockRegions - 1) * driverSettings.clockStep); %useful to complete the pattern in the stack phase with the (Nphases - 1) pReset
+% D0 = driverSettings.maxVoltage * ones(1, (driverSettings.NclockRegions - 1) * driverSettings.clockStep); %useful to complete the pattern in the stack phase with the (Nphases - 1) pReset
+% D1 = -driverSettings.maxVoltage * ones(1, (driverSettings.NclockRegions - 1) * driverSettings.clockStep); %useful to complete the pattern in the stack phase with the (Nphases - 1) pReset
 
 % The length of a fixed value driver must comply with:
 % - Nsteps decide the number of values to send in input, each of them require a pCycle
@@ -47,12 +47,13 @@ D1 = -driverSettings.maxVoltage * ones(1, (driverSettings.NclockRegions - 1) * d
 % - (NclockRegions-1)*clockStep considers N pReset cycle to complain with the stack_phase
 
 Ncomb = size(driverSettings.driverModes);  %number of combination in the matrix of driver values
-fixed_value_length = (driverSettings.NsweepSteps + driverSettings.phasesRepetition - 1)*driverSettings.cycleLength + (driverSettings.NclockRegions - 1)*driverSettings.clockStep;
+fixed_value_length = (driverSettings.NsweepSteps + driverSettings.phasesRepetition - 1)*driverSettings.cycleLength;
+% fixed_value_length = (driverSettings.NsweepSteps*driverSettings.phasesRepetition*driverSettings.cycleLength);
 %fixed_inactive = num2cell( 0 * ones(1, fixed_value_length ) );
 fixed_one = num2cell(-driverSettings.maxVoltage * ones(1, fixed_value_length));
 fixed_zero = num2cell(driverSettings.maxVoltage * ones(1, fixed_value_length));
-dr_pos_sweep = num2cell([D D1]); % sweep from low to high values
-dr_neg_sweep = num2cell([not_D D0]); % sweep from high to low values
+dr_pos_sweep = num2cell(D); % sweep from low to high values
+dr_neg_sweep = num2cell(not_D); % sweep from high to low values
  
 Ndrivers = length(driverSettings.driverNames);
 
