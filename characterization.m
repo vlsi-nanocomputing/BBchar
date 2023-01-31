@@ -33,10 +33,8 @@ function characterization(charSettings,file,terminationSettings,terminationCircu
     % saving the names of the drivers in a string array
     N_drivers = tableNMol.stack_driver.num;
     for dd = 1:N_drivers
-        tmp_driver_label_qll = tableNMol.stack_driver.stack(dd).identifier_qll;
-        driver_labels_qll(dd,:) = strcat('driver_',tmp_driver_label_qll);
-        tmp_driver_label = tableNMol.stack_driver.stack(dd).identifier;
-        driver_labels{dd,:} = tmp_driver_label;
+        driver_labels_qll(dd,:) = strcat('driver_',tableNMol.stack_driver.stack(dd).identifier_qll);
+        driver_labels{dd,:} = tableNMol.stack_driver.stack(dd).identifier;
     end
 
     for a = 2:length(table.Properties.VariableDescriptions)        % scanning the names of the original table's columns
@@ -67,6 +65,7 @@ function characterization(charSettings,file,terminationSettings,terminationCircu
         tmp_str = char(driver_labels(j));
         if tmp_str(end) ~= 'c'
             dr_table{j} = driver_labels(j,:);     %table containing the (true) names of the drivers
+        else
             comp_array{j} = j;    %this array tells which columns of the driver_mat to eliminate 
         end
     end
@@ -81,24 +80,26 @@ function characterization(charSettings,file,terminationSettings,terminationCircu
     saved_outputs = NaN(length(output_mat),1);             %preallocating output array
     saved_drivers = NaN(length(driver_mat),N_drivers/2);   %preallocating driver matrix
 
-    %the aim of the following for cycle is to rename the drivers in the
-    %dr_array. This is necessary since there are two columns for 'Dr1', two
-    %for 'Dr2' and so on. Each couple of identical drivers is named as, for instance, 'Dr1_a'
-    %and 'Dr1_b' in order to distinguish the two.
+    %The aim of the following for cycle is to rename the drivers in the %dr_array.
+    %This is necessary since there are two columns for 'Dr1', two for 'Dr2' and so on.
+    %Each couple of identical drivers is named as, for instance, 'Dr1_a' and 'Dr1_b' in order to distinguish the two.
+
     for y = 1:2:length(dr_array)-1
        dr_array(y) = strcat(dr_array(y),'_a');
        dr_array(y+1) = strcat(dr_array(y+1),'_b');
     end
 
-    ABCD_names = reorder(A.out_coord).final_string;   %substituting the original labels with Vout_A, ecc.
+    ABCD_names = rename_outputs(A.out_coord).final_string;   %substituting the original labels with Vout_A, ecc.
+
+    delay = driverPara.phasesRepetition * driverPara.cycleLength;   %clock steps that separate the input from the corresponding output
 
     %%%%%%%%    generating a .csv file for each output    %%%%%%%%
     for d = 1:A.N_outputs*2
         headers_array = [ABCD_names(d,:) dr_array];   %array of strings containing the headers of the d-th .csv file
-        for e = 1:length(clock_mat)
+        for e = delay+1:length(clock_mat)
             if clock_mat(e,d) == 2 && original_clock_mat(e,d) == 2      %check if output and termination are in HOLD state
                 saved_outputs(e,1) = output_mat(e,d);  %outputs that are going to be stored in the .csv file
-                saved_drivers(e,:) = driver_mat(e,:);  %drivers that are going to be stored in the .csv file
+                saved_drivers(e,:) = driver_mat(e-delay,:);  %drivers that are going to be stored in the .csv file
             end
         end
         final_mat = rmmissing(cat(2,saved_outputs,saved_drivers));  %concatenating outputs and drivers in a matrix and then removing NaN values from it
@@ -109,7 +110,7 @@ function characterization(charSettings,file,terminationSettings,terminationCircu
         writetable(T,path);   %creation of the .csv file
     end
     
-    %%%%%%%%%    Evaluating the area of the circuit    %%%%%%%%
+    %%%%%%%%%    EVALUATING THE AREA OF THE CIRCUIT    %%%%%%%%
 
     %saving the min and max coordinates in y-axis and z-axis (to evaluate the number of cells)
     ymin = min(A.pos_mol(:,2));
@@ -136,7 +137,7 @@ function characterization(charSettings,file,terminationSettings,terminationCircu
     % total area will be the product of the area between two adjacent molecules and the number of cells
     total_area = (deltaz*deltay)*N_cells;
 
-    %%%%%%%%%%    writing the .txt file with additional info    %%%%%%%%%%
+    %%%%%%%%%%    WRITING THE .txt FILE WITH ADDITIONAL INFORMATION    %%%%%%%%%%
     fileid = fopen(fullfile(dirPath,'info.txt'),"w");
     fprintf(fileid,'Number of outputs: %d\n',A.N_outputs*2);
     for w = 1:A.N_outputs*2
