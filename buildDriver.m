@@ -27,45 +27,70 @@ switch(driverSettings.sweepType)
         not_variation = linspace(-driverSettings.maxVoltage, driverSettings.maxVoltage, driverSettings.NsweepSteps);
 end
 
-D = repelem(variation, driverSettings.cycleLength); % each element of variation is repeated cycleLength times
-not_D = repelem(not_variation, driverSettings.cycleLength); % each element of not_variation is repeated cycleLength times
+D_sweep = repelem(variation, driverSettings.cycleLength); % each element of variation is repeated cycleLength times
+D_not_sweep = repelem(not_variation, driverSettings.cycleLength); % each element of not_variation is repeated cycleLength times
+% D_one = num2cell(-driverSettings.maxVoltage * ones(1, length(D_sweep)));
+% D_zero = num2cell(driverSettings.maxVoltage * ones(1, length(D_sweep)));
+D_one = -driverSettings.maxVoltage * ones(1, length(D_sweep));
+D_zero = driverSettings.maxVoltage * ones(1, length(D_sweep));
 
-% Add same values to D and not_D to complain with pipeline
-if (driverSettings.phasesRepetition > 1)
-    flap_array_D = D(end)*ones( 1, (driverSettings.phasesRepetition - 1)*driverSettings.cycleLength);
-    flap_array_not_D = not_D(end)*ones(1,(driverSettings.phasesRepetition - 1)*driverSettings.cycleLength);
-    D = [D flap_array_D];
-    not_D = [not_D flap_array_not_D];
+D0 = driverSettings.maxVoltage * ones(1, (driverSettings.NclockRegions - 1) * driverSettings.clockStep); %useful to complete the pattern in the stack phase with the (Nphases - 1) pReset
+D1 = -driverSettings.maxVoltage * ones(1, (driverSettings.NclockRegions - 1) * driverSettings.clockStep); %useful to complete the pattern in the stack phase with the (Nphases - 1) pReset
+
+Ncol = size(driverSettings.driverModes);
+Ncomb = Ncol(1);   % the number of rows of driverModes tells the number of driver values' combinations 
+fixed_value_length = (driverSettings.NsweepSteps*Ncomb + driverSettings.phasesRepetition - 1)*driverSettings.cycleLength + (driverSettings.NclockRegions - 1)*driverSettings.clockStep;
+
+Ndrivers = length(driverSettings.driverNames);
+
+% creating two temporary structures from which we will copy the values in valuesDr
+tmp_valuesDr = cell(Ndrivers,fixed_value_length);
+tmp_valuesDr_neg = tmp_valuesDr;
+
+for j = 1:Ndrivers     % reading the j-th driver of driverModes
+    D_tot = [];
+    for jj = 1:Ncomb     % reading the jj-th value of the same driver
+        switch(driverSettings.driverModes{jj,j})
+            case '0'
+                D_tot = horzcat(D_tot,D_zero);
+            case '1'
+                D_tot = horzcat(D_tot,D_one);
+            case 'sweep'
+                D_tot = horzcat(D_tot,D_sweep);
+            case 'not_sweep'
+                D_tot = horzcat(D_tot,D_not_sweep);
+        end
+    end
+
+    % adding flap_array to consider the repetition of phases
+    if (driverSettings.phasesRepetition > 1)
+        flap_array = D_tot(end)*ones( 1, (driverSettings.phasesRepetition - 1)*driverSettings.cycleLength );
+        D_tot = horzcat(D_tot,flap_array);
+    end
+    
+    % adding another array to synchronize correctly with buildClock
+    if strcmp(driverSettings.driverModes{end,j},'sweep') || strcmp(driverSettings.driverModes{end,j},'1')
+        D_tot = horzcat(D_tot,D1);
+    elseif strcmp(driverSettings.driverModes{end,j},'not_sweep') || strcmp(driverSettings.driverModes{end,j},'0')
+        D_tot = horzcat(D_tot,D0);
+    end
+
+    D_tot_neg = -D_tot;
+    D_tot = num2cell(D_tot);
+    D_tot_neg = num2cell(D_tot_neg);
+    [tmp_valuesDr{j,:}] = D_tot{:};
+    [tmp_valuesDr_neg{j,:}] = D_tot_neg{:};
 end
 
-% D0 = driverSettings.maxVoltage * ones(1, (driverSettings.NclockRegions - 1) * driverSettings.clockStep); %useful to complete the pattern in the stack phase with the (Nphases - 1) pReset
-% D1 = -driverSettings.maxVoltage * ones(1, (driverSettings.NclockRegions - 1) * driverSettings.clockStep); %useful to complete the pattern in the stack phase with the (Nphases - 1) pReset
-
-% The length of a fixed value driver must comply with:
-% - Nsteps decide the number of values to send in input, each of them require a pCycle
-% - If there is phase repetition, must be considered also (phasesRepetition-1)*pCycle clock cycles considering the latency
-% - (NclockRegions-1)*clockStep considers N pReset cycle to complain with the stack_phase
-
-Ncomb = size(driverSettings.driverModes);  %number of combination in the matrix of driver values
-fixed_value_length = (driverSettings.NsweepSteps + driverSettings.phasesRepetition - 1)*driverSettings.cycleLength;
-% fixed_value_length = (driverSettings.NsweepSteps*driverSettings.phasesRepetition*driverSettings.cycleLength);
-%fixed_inactive = num2cell( 0 * ones(1, fixed_value_length ) );
-fixed_one = num2cell(-driverSettings.maxVoltage * ones(1, fixed_value_length));
-fixed_zero = num2cell(driverSettings.maxVoltage * ones(1, fixed_value_length));
-dr_pos_sweep = num2cell(D); % sweep from low to high values
-dr_neg_sweep = num2cell(not_D); % sweep from high to low values
- 
-Ndrivers = length(driverSettings.driverNames);
 
 %initialize valuesDr cell array
 if driverSettings.doubleMolDriver
-    valuesDr = cell(Ndrivers*2,fixed_value_length*Ncomb(1)+1); %nrows = number of driver times 2 because the doubleDriverMode,ncol = length of the input values + 1 for the input name
+    valuesDr = cell(Ndrivers*2,fixed_value_length+1); %nrows = number of driver times 2 because the doubleDriverMode,ncol = length of the input values + 1 for the input name
 else
-    valuesDr = cell(Ndrivers,fixed_value_length*Ncomb(1)+1); % not in doubleDriverMode, so just one row per input
+    valuesDr = cell(Ndrivers,fixed_value_length+1); % not in doubleDriverMode, so just one row per input
 end
 
-
-for ii = 1:Ndrivers    %each ii is a driver
+for ii = 1:Ndrivers
      name = driverSettings.driverNames{ii};
      valuesDr{ii,1} = name; %write dr name in row ii and column 1
             
@@ -73,33 +98,11 @@ for ii = 1:Ndrivers    %each ii is a driver
          name_c = [name '_c'];
          valuesDr{ii+Ndrivers,1} = name_c;  %write dr_c name in row ii+Ndrives and column 1, so we obtain Dr1,Dr2,..,DrN,Dr1_c,Dr2_c,..,DrN_c
      end
-    
-    for j = 1:Ncomb(1)   %every column of driverModes is read and its corresponding array of values is added to the row of valuesDr
-        switch driverSettings.driverModes{j,ii}
-            case '0'
-                [valuesDr{ii,2+(j-1)*fixed_value_length:j*fixed_value_length+1}] = fixed_zero{:};
-            case '1'
-                [valuesDr{ii,2+(j-1)*fixed_value_length:j*fixed_value_length+1}] = fixed_one{:};
-            case 'sweep'
-                [valuesDr{ii,2+(j-1)*fixed_value_length:j*fixed_value_length+1}] = dr_pos_sweep{:};
-            case 'not_sweep'
-                [valuesDr{ii,2+(j-1)*fixed_value_length:j*fixed_value_length+1}] = dr_neg_sweep{:};
-        end
 
-        if driverSettings.doubleMolDriver 
-            switch driverSettings.driverModes{j,ii} 
-                % dr_c has opposite value than dr
-                case '0'
-                    [valuesDr{ii+Ndrivers,2+(j-1)*fixed_value_length:j*fixed_value_length+1}] = fixed_one{:};
-                case '1'
-                    [valuesDr{ii+Ndrivers,2+(j-1)*fixed_value_length:j*fixed_value_length+1}] = fixed_zero{:};
-                case 'sweep'
-                    [valuesDr{ii+Ndrivers,2+(j-1)*fixed_value_length:j*fixed_value_length+1}] = dr_neg_sweep{:};
-                case 'not_sweep'
-                    [valuesDr{ii+Ndrivers,2+(j-1)*fixed_value_length:j*fixed_value_length+1}] = dr_pos_sweep{:};
-            end
-        end
+     [valuesDr{ii,2:end}] = tmp_valuesDr{ii,:};
 
-    end
+     if driverSettings.doubleMolDriver 
+         [valuesDr{ii+Ndrivers,2:end}] = tmp_valuesDr_neg{ii,:};
+     end
 
 end
