@@ -32,8 +32,10 @@ function characterization(charSettings,file,terminationSettings,terminationCircu
 
     % saving the names of the drivers in a string array
     N_drivers = tableNMol.stack_driver.num;
+    driver_labels_qll = cell(N_drivers,1);
+    driver_labels = cell(N_drivers,1);
     for dd = 1:N_drivers
-        driver_labels_qll(dd,:) = strcat('driver_',tableNMol.stack_driver.stack(dd).identifier_qll);
+        driver_labels_qll{dd,:} = strcat('driver_',tableNMol.stack_driver.stack(dd).identifier_qll);
         driver_labels{dd,:} = tableNMol.stack_driver.stack(dd).identifier;
     end
 
@@ -44,8 +46,8 @@ function characterization(charSettings,file,terminationSettings,terminationCircu
                 clock_mat(:,b) = table{:,a};                   %the entire column of the table is copied in clock_mat
             elseif strcmp(heading,A.output_labels(b,:)) == 1   %same thing for the output names
                 output_mat(:,b) = table{:,a};
-            elseif strcmp(heading,A.original_clock_labels(b,:)) == 1
-                original_clock_mat(:,b) = table{:,a};
+            elseif strcmp(heading,A.termination_clock_labels(b,:)) == 1
+                termination_clock_mat(:,b) = table{:,a};
             end
         end
         for c = 1:N_drivers
@@ -62,9 +64,9 @@ function characterization(charSettings,file,terminationSettings,terminationCircu
 
     % removing complementary drivers (i.e. Dr1_c, Dr2_c, Dr3_c)
     for j = 1:N_drivers
-        tmp_str = char(driver_labels(j));
+        tmp_str = char(driver_labels{j});
         if tmp_str(end) ~= 'c'
-            dr_table{j} = driver_labels(j,:);     %table containing the (true) names of the drivers
+            dr_table{j} = driver_labels{j,:};     %table containing the (true) names of the drivers
         else
             comp_array{j} = j;    %this array tells which columns of the driver_mat to eliminate 
         end
@@ -89,15 +91,15 @@ function characterization(charSettings,file,terminationSettings,terminationCircu
        dr_array(y+1) = strcat(dr_array(y+1),'_b');
     end
 
-    ABCD_names = rename_outputs(A.out_coord).final_string;   %substituting the original labels with Vout_A, ecc.
-
+    ABCD_names = string(rename_outputs(A.out_coord,term_angle).ABCD_string);   %substituting the original labels with Vout_A, ecc.
+    
     delay = driverPara.phasesRepetition * driverPara.cycleLength;   %clock steps that separate the input from the corresponding output
 
     %%%%%%%%    generating a .csv file for each output    %%%%%%%%
     for d = 1:A.N_outputs*2
-        headers_array = [ABCD_names(d,:) dr_array];   %array of strings containing the headers of the d-th .csv file
+        headers_array = [ABCD_names(d) dr_array];   %array of strings containing the headers of the d-th .csv file
         for e = delay+1:length(clock_mat)
-            if clock_mat(e,d) == 2 && original_clock_mat(e,d) == 2      %check if output and termination are in HOLD state
+            if clock_mat(e,d) == 2 && termination_clock_mat(e,d) == 2      %check if output and termination are in HOLD state
                 saved_outputs(e,1) = output_mat(e,d);  %outputs that are going to be stored in the .csv file
                 saved_drivers(e,:) = driver_mat(e-delay,:);  %drivers that are going to be stored in the .csv file
             end
@@ -105,7 +107,7 @@ function characterization(charSettings,file,terminationSettings,terminationCircu
         final_mat = rmmissing(cat(2,saved_outputs,saved_drivers));  %concatenating outputs and drivers in a matrix and then removing NaN values from it
         T = array2table(final_mat,'VariableNames',headers_array);   %creating the table containing output and drivers
         T = unique(T);   %eliminating equal rows
-        file_name = strcat(ABCD_names(d,:),'.csv');
+        file_name = strcat(ABCD_names(d),'.csv');
         path = fullfile(dirPath,file_name);
         writetable(T,path);   %creation of the .csv file
     end
