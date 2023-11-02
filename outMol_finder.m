@@ -4,7 +4,7 @@
 % (respectively in the format 'Vout_00xxa' and 'CK_00xxa') that will be retrieved in the file 'Additional_Information.txt'
 % in order to extract the .csv files
 
-function [output_data] = outMol_finder(simulation_path, bus_flag, OUT_angle)
+function [output_data] = outMol_finder(simulation_path, terminationCircuit, bus_flag)
 
     % Tables loading
     tableNMol = load(fullfile(simulation_path,'simulation_output.mat')); %Load the table with every simulated value for the layout

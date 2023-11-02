@@ -1,9 +1,8 @@
-function [stack_phase] = buildClock(NclockRegions,NsweepSteps,phasesRepetition,pReset,pCycle,driverModes)
+function [stack_phase] = buildClock(NclockRegions,NsweepSteps,phasesRepetition,pReset,pCycle,NdriverComb)
 
-    size_modes = size(driverModes);
-    Ncomb = size_modes(1);
-    filler = repmat(pReset,1,(NclockRegions - 1));
-    completeCycle = [repmat(pCycle,1,NsweepSteps*Ncomb + phasesRepetition - 1) filler];
+    [~,Ncomb] = size(NdriverComb);
+    filler = repmat(pReset,1,(phasesRepetition)*NclockRegions); %for emptying the pipe
+    completeCycle = [repmat(pCycle,1,NsweepSteps*Ncomb) filler];
     stack_phase = zeros(NclockRegions,length(completeCycle));
     
     for ii = 1:NclockRegions
