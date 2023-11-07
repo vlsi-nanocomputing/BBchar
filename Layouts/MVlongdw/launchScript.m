@@ -9,8 +9,8 @@ thisPath = pwd;
 scerpaPath = fullfile(myDataPath,'scerpa');
 libraryPath = fullfile(BBcharPath, 'Lib');
 
-outputPath = fullfile(BBcharPath,'Layouts','bus');
-file = 'bus.qll';
+outputPath = fullfile(BBcharPath,'Layouts','MVlongdw');
+file = 'MVlongdw.qll';
 
 
 %% Clock signal parameters
@@ -31,9 +31,11 @@ pCycle = [pSwitch pHold pRelease pReset]; % if step = 1 -> [-2 -1 0 1 2 -> 2 2 2
 
 %% Driver parameters
 driverPara.doubleMolDriver = 1;
-driverPara.Ninputs = 1; %Number of physical input of the layout
-driverPara.driverNames = [{'Dr1'}]; %list of the drivers name as they are in the .qll file
-driverPara.driverModes = [{'sweep'}]; %list of the mode for each driver, same order as driverName
+driverPara.Ninputs = 3; %Number of physical input of the layout
+driverPara.driverNames = [{'Dr1'} {'Dr2'} {'Dr3'}]; %list of the drivers name as they are in the .qll file
+driverPara.driverModes = [{'sweep'} {'sweep'}       {'sweep'}       {'sweep'}; % Dr1 combinations
+                          {'sweep'} {'sweep'}       {'not_sweep'}   {'not_sweep'}; % Dr2 combinations
+                          {'sweep'} {'not_sweep'}   {'sweep'}       {'not_sweep'}]; %list of the mode for each driver, same order as driverName
 % Definition of drivers modes to use in debug mode 
 %       '1'      -> driver value fixed to '1'-logic;
 %       '0'      -> driver value fixed to '0'-logic;
@@ -91,14 +93,14 @@ end
 
 %% Characterization settings
 charSettings.LibPath = libraryPath;
-charSettings.LibDeviceName = 'bus';
+charSettings.LibDeviceName = 'MVlongdw';
 charSettings.out_path = outputPath;
 % charSettings.sel_Vin = 0; % set to '1' if you want to use the Vin computed starting from QD's charge of the driver. '0' means to use the same Vin used as Values_Dr
 % charSettings.allHoldValues = 0; %set to '1' if you want to plot every Vout when the output is in the Hold state. '0' means just the last one
 % charSettings.plotOnOut = 0; %Set to '1' if you want to plot the Vout on 'out' (after the last molecule) or to '0' for the Vout on the last molecule
 
 %% Launch the BBchar software
-charSettings.debugMode = 0; % - characteristic visually plotted instead of tabled
+charSettings.debugMode = 1; % - characteristic visually plotted instead of tabled
 charSettings.LibEvaluation = 0; % Evaluate the behaviour starting from the library
 
 %debugMode LibEvaluation
@@ -128,16 +130,16 @@ if charSettings.debugMode %debug = 1
             circuit.qllFile = terminationCircuit.filepath;
             settings.out_path = outputPath;
             plotSettings.out_path = settings.out_path;
-        end
-        cd(scerpaPath)
+        end   
         diary on
+        cd(scerpaPath)
         SCERPA('generateLaunchView',circuit,settings,plotSettings);
-        % SCERPA('plotSteps',plotSettings)
+        %SCERPA('plotSteps',plotSettings)
+        cd(thisPath)
         diary off
         if isfield(settings,'out_path') 
             movefile('diary',fullfile(settings.out_path,'logfile.log'))
         end
-        cd(thisPath)
     end
 
 else %debug = 0

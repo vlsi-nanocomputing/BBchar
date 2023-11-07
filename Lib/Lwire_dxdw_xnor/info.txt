@@ -1,0 +1,6 @@
+Number of outputs	4
+Vou_1A_dH	Vou_1B_dH	Vou_1A_dL	Vou_1B_dL	
+Latency	4
+Number of clock phases	4
+Maximum driver voltage	1.00 V
+Total area	6x12=72

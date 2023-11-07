@@ -9,8 +9,8 @@ thisPath = pwd;
 scerpaPath = fullfile(myDataPath,'scerpa');
 libraryPath = fullfile(BBcharPath, 'Lib');
 
-outputPath = fullfile(BBcharPath,'Layouts','bus');
-file = 'bus.qll';
+outputPath = fullfile(BBcharPath,'Layouts','Lwire_dxdw');
+file = 'Lwire_dxdw.qll';
 
 
 %% Clock signal parameters
@@ -91,7 +91,7 @@ end
 
 %% Characterization settings
 charSettings.LibPath = libraryPath;
-charSettings.LibDeviceName = 'bus';
+charSettings.LibDeviceName = 'Lwire_dxdw';
 charSettings.out_path = outputPath;
 % charSettings.sel_Vin = 0; % set to '1' if you want to use the Vin computed starting from QD's charge of the driver. '0' means to use the same Vin used as Values_Dr
 % charSettings.allHoldValues = 0; %set to '1' if you want to plot every Vout when the output is in the Hold state. '0' means just the last one
@@ -128,11 +128,11 @@ if charSettings.debugMode %debug = 1
             circuit.qllFile = terminationCircuit.filepath;
             settings.out_path = outputPath;
             plotSettings.out_path = settings.out_path;
-        end
+        end   
         cd(scerpaPath)
         diary on
         SCERPA('generateLaunchView',circuit,settings,plotSettings);
-        % SCERPA('plotSteps',plotSettings)
+        %SCERPA('plotSteps',plotSettings)
         diary off
         if isfield(settings,'out_path') 
             movefile('diary',fullfile(settings.out_path,'logfile.log'))

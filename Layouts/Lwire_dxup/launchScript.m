@@ -9,8 +9,8 @@ thisPath = pwd;
 scerpaPath = fullfile(myDataPath,'scerpa');
 libraryPath = fullfile(BBcharPath, 'Lib');
 
-outputPath = fullfile(BBcharPath,'Layouts','bus');
-file = 'bus.qll';
+outputPath = fullfile(BBcharPath,'Layouts','Lwire_dxup');
+file = 'Lwire_dxup.qll';
 
 
 %% Clock signal parameters
@@ -32,7 +32,7 @@ pCycle = [pSwitch pHold pRelease pReset]; % if step = 1 -> [-2 -1 0 1 2 -> 2 2 2
 %% Driver parameters
 driverPara.doubleMolDriver = 1;
 driverPara.Ninputs = 1; %Number of physical input of the layout
-driverPara.driverNames = [{'Dr1'}]; %list of the drivers name as they are in the .qll file
+driverPara.driverNames = [{'In'}]; %list of the drivers name as they are in the .qll file
 driverPara.driverModes = [{'sweep'}]; %list of the mode for each driver, same order as driverName
 % Definition of drivers modes to use in debug mode 
 %       '1'      -> driver value fixed to '1'-logic;
@@ -91,7 +91,7 @@ end
 
 %% Characterization settings
 charSettings.LibPath = libraryPath;
-charSettings.LibDeviceName = 'bus';
+charSettings.LibDeviceName = 'Lwire_dxup';
 charSettings.out_path = outputPath;
 % charSettings.sel_Vin = 0; % set to '1' if you want to use the Vin computed starting from QD's charge of the driver. '0' means to use the same Vin used as Values_Dr
 % charSettings.allHoldValues = 0; %set to '1' if you want to plot every Vout when the output is in the Hold state. '0' means just the last one
@@ -128,11 +128,11 @@ if charSettings.debugMode %debug = 1
             circuit.qllFile = terminationCircuit.filepath;
             settings.out_path = outputPath;
             plotSettings.out_path = settings.out_path;
-        end
+        end   
         cd(scerpaPath)
         diary on
         SCERPA('generateLaunchView',circuit,settings,plotSettings);
-        % SCERPA('plotSteps',plotSettings)
+        %SCERPA('plotSteps',plotSettings)
         diary off
         if isfield(settings,'out_path') 
             movefile('diary',fullfile(settings.out_path,'logfile.log'))
