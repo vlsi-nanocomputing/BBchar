@@ -76,12 +76,13 @@ settings.dumpClock = 1;
 settings.dumpVout = 1;
 
 %viewer settings
-plotSettings.plot_waveform = 1;
-plotSettings.plot_waveform_index = 1;
+plotSettings.plot_waveform = 0;
+plotSettings.plot_waveform_index = 0;
 plotSettings.plot_3dfig = 0;
 plotSettings.plot_1DCharge = 0;
 plotSettings.plot_logic = 1;
 plotSettings.plot_potential = 1;
+plotSettings.plotList = 601:clock_step:840;
 plotSettings.plotSpan = clock_step;
 plotSettings.fig_saver = 0;
 plotSettings.HQimage = 0;
@@ -100,7 +101,7 @@ charSettings.out_path = outputPath;
 % charSettings.plotOnOut = 0; %Set to '1' if you want to plot the Vout on 'out' (after the last molecule) or to '0' for the Vout on the last molecule
 
 %% Launch the BBchar software
-charSettings.debugMode = 1; % - characteristic visually plotted instead of tabled
+charSettings.debugMode = 0; % - characteristic visually plotted instead of tabled
 charSettings.LibEvaluation = 0; % Evaluate the behaviour starting from the library
 
 %debugMode LibEvaluation
@@ -131,15 +132,15 @@ if charSettings.debugMode %debug = 1
             settings.out_path = outputPath;
             plotSettings.out_path = settings.out_path;
         end   
-        diary on
         cd(scerpaPath)
-        SCERPA('generateLaunchView',circuit,settings,plotSettings);
-        %SCERPA('plotSteps',plotSettings)
+        % diary on
+        % SCERPA('generateLaunch',circuit,settings);
+        SCERPA('plotSteps',plotSettings)
+        % diary off
+        % if isfield(settings,'out_path') 
+        %     movefile('diary',fullfile(settings.out_path,'logfile.log'))
+        % end
         cd(thisPath)
-        diary off
-        if isfield(settings,'out_path') 
-            movefile('diary',fullfile(settings.out_path,'logfile.log'))
-        end
     end
 
 else %debug = 0

@@ -1,8 +1,8 @@
 function [stack_phase] = buildClock(NclockRegions,NsweepSteps,phasesRepetition,pReset,pCycle,NdriverComb)
 
     [~,Ncomb] = size(NdriverComb);
-    filler = repmat(pReset,1,(phasesRepetition)*NclockRegions); %for emptying the pipe
-    completeCycle = [repmat(pCycle,1,NsweepSteps*Ncomb) filler];
+    filler = repmat(pReset,1,NclockRegions); %for alignment
+    completeCycle = [repmat(pCycle,1,NsweepSteps*Ncomb+(phasesRepetition-1)) filler];
     stack_phase = zeros(NclockRegions,length(completeCycle));
     
     for ii = 1:NclockRegions

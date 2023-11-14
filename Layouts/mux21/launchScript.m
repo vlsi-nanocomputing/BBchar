@@ -31,11 +31,13 @@ pCycle = [pSwitch pHold pRelease pReset]; % if step = 1 -> [-2 -1 0 1 2 -> 2 2 2
 
 %% Driver parameters
 driverPara.doubleMolDriver = 1;
-driverPara.Ninputs = 3; %Number of physical input of the layout
-driverPara.driverNames = [{'a'} {'b'} {'s'}]; %list of the drivers name as they are in the .qll file
-driverPara.driverModes = [{'sweep'} {'sweep'}       {'sweep'}       {'sweep'}; % a combinations
-                          {'sweep'} {'sweep'}       {'not_sweep'}   {'not_sweep'}; % b combinations
-                          {'sweep'} {'not_sweep'}   {'sweep'}       {'not_sweep'}]; %s combinations
+driverPara.Ninputs = 5; %Number of physical input of the layout
+driverPara.driverNames = [{'a'} {'b'} {'s'} {'C0'} {'C1'}]; %list of the drivers name as they are in the .qll file
+driverPara.driverModes = [{'0'} {'0'} {'0'} {'0'} {'1'} {'1'} {'1'} {'1'}; % a combinations
+                          {'0'} {'0'} {'1'} {'1'} {'0'} {'0'} {'1'} {'1'}; % b combinations
+                          {'0'} {'1'} {'0'} {'1'} {'0'} {'1'} {'0'} {'1'};
+                          {'0'} {'0'} {'0'} {'0'} {'0'} {'0'} {'0'} {'0'};
+                          {'1'} {'1'} {'1'} {'1'} {'1'} {'1'} {'1'} {'1'}]; %s combinations
 % Definition of drivers modes to use in debug mode 
 %       '1'      -> driver value fixed to '1'-logic;
 %       '0'      -> driver value fixed to '0'-logic;
@@ -43,7 +45,7 @@ driverPara.driverModes = [{'sweep'} {'sweep'}       {'sweep'}       {'sweep'}; %
 %   'not_sweep'  -> the driver sweep from 1 ('1'-logic) to -1 ('0'-logic);
 
 driverPara.sweepType = 'lin'; %sweep creation following a linspace ('lin') or a logspace ('log') -> Nstep adviced 50
-driverPara.NsweepSteps = 10;
+driverPara.NsweepSteps = 1;
 driverPara.cycleLength = length(pCycle);
 driverPara.clockStep = clock_step;
 driverPara.NclockRegions = 4; % number of clock regions in the layout 
@@ -132,13 +134,13 @@ if charSettings.debugMode %debug = 1
             plotSettings.out_path = settings.out_path;
         end   
         cd(scerpaPath)
-        diary on
-        SCERPA('generateLaunchView',circuit,settings,plotSettings);
-        %SCERPA('plotSteps',plotSettings)
-        diary off
-        if isfield(settings,'out_path') 
-            movefile('diary',fullfile(settings.out_path,'logfile.log'))
-        end
+        % diary on
+        % SCERPA('generateLaunchView',circuit,settings,plotSettings);
+        SCERPA('plotSteps',plotSettings)
+        % diary off
+        % if isfield(settings,'out_path') 
+        %     movefile('diary',fullfile(settings.out_path,'logfile.log'))
+        % end
         cd(thisPath)
     end
 
