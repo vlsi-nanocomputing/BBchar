@@ -1,0 +1,10 @@
+# ignore temp files
+*.asv
+
+# ignore images from simulations
+*.jpg
+*.fig
+
+# ignore simulation files
+*.qss 
+

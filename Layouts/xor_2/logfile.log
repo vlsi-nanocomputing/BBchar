@@ -1,0 +1,1469 @@
+Generating SCERPA layout!
+Running SCERPA Version 4.0 
+ - Politecnico di Torino |  VLSI nanocomputing
+ - www.vlsilab.polito.it
+
+ 
+#############
+RELATED WORKS
+ 
+FOR SCERPA
+<1> Beretta G., Ardesi Y., Graziano M., and Piccinini G., "Multi-Molecule Field-Coupled Nanocomputing for the Implementation of a Neuron," in IEEE Transactions on Nanotechnology, vol. 21, pp. 52-59, 2022, doi: 10.1109/TNANO.2022.3143720 </1>
+<2> Ardesi Y., Turvani G., Graziano M., and Piccinini G., "SCERPA Simulation of Clocked Molecular Field-Coupling Nanocomputing," in {IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 29, no. 3, pp. 558-567, March 2021, doi: 10.1109/TVLSI.2020.3045198 </2>
+<3> Ardesi Y., Wang R., Turvani G., Piccinini G., and Graziano M., "SCERPA: A Self-Consistent Algorithm for the Evaluation of the Information Propagation in Molecular Field-Coupled Nanocomputing," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 39, no. 10, pp. 2749-2760, Oct. 2020, doi: 10.1109/TCAD.2019.2960360 </3>
+<4> Wang R., Chilla M., Palucci A., Graziano M., and Piccinini G., "An effective algorithm for clocked field-coupled nanocomputing paradigm," {2016 IEEE Nanotechnology Materials and Devices Conference (NMDC), 2016, pp. 1-2, doi: 10.1109/NMDC.2016.7777166 </4>
+
+FOR USED MOLECULES
+<1> Arima V., et al. "Toward quantum-dot cellular automata units: thiolated-carbazole linked bisferrocenes." Nanoscale 4.3 (2012): 813-823. DOI: 10.1039/C1NR10988J </1>
+ 
+#############
+ 
+Layout grid is: 18 x 166 
+Intermolecular distance: 1.00 nm
+Vertical intermolecular distance: 2.00 nm
+Area occupied by molecules, by considering also drivers: 1952.00 nm^2
+Chip area occupied by molecules: 5976.00 nm^2
+Creating molecule data file "Data/Data_Molecule.mat"... [DONE] 
+Creating driver geometry file "Data/Data_Driver.mat"... [DONE] 
+Creating driver value file "Data/Values_Driver.mat"... [DONE] 
+Creating output geometry file "Data/Data_Output.mat"... [DONE] 
+Creating clock value file "Data/Fake_Phases.mat"... [DONE] 
+
+SCERPA is ready to start.
+
+Launching SCERPA!
+Loading SCERPA
+No previous simulation found
+Importing Layout...
+Importing Libraries...
+Loading Complete
+Creating distance matrix...
+[BETA] Evaluating Power dissipation...
+ | POWER REPORT (drivers are not yet considered in the evaluation)
+ |  ~ Total run time: 2.8 ps (280 timesteps, dT = 0.01 ps)
+ |  ~ Total dissipated energy: 16436.91 eV (2.6299 fJ) 
+ |  ~ Total power dissipation: 939252.16 nW, (1/dT=100.0 GHz) 
+ |  ~ Total power density on electrodes: 493.30 W/nm, (Electrode area 1904.00 nm^2) 
+Starting Time evaluation
+Evaluating time step 1.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 49.343547 s
+
+ Evaluating time step 2.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 101.622873 s
+
+ Evaluating time step 3.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 320.822201 s
+
+ Evaluating time step 4.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 319.822409 s
+
+ Evaluating time step 5.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 313.790367 s
+
+ Evaluating time step 6.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 307.884458 s
+
+ Evaluating time step 7.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 339.219607 s
+
+ Evaluating time step 8.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 689.735002 s
+
+ Evaluating time step 9.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 711.532612 s
+
+ Evaluating time step 10.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 324.260144 s
+
+ Evaluating time step 11.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 307.636311 s
+
+ Evaluating time step 12.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 301.693526 s
+
+ Evaluating time step 13.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 301.944562 s
+
+ Evaluating time step 14.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 398.034115 s
+
+ Evaluating time step 15.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 322.642169 s
+
+ Evaluating time step 16.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 317.739655 s
+
+ Evaluating time step 17.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 296.417010 s
+
+ Evaluating time step 18.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1552.893992 s
+
+ Evaluating time step 19.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 198.542462 s
+
+ Evaluating time step 20.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 346.346275 s
+
+ Evaluating time step 21.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 338.693715 s
+
+ Evaluating time step 22.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 245.911664 s
+
+ Evaluating time step 23.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 544.746510 s
+
+ Evaluating time step 24.00 of 280.00
+Disabling Active Region Mode
+[Warning: Low precision] 
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 261.827315 s
+
+ Evaluating time step 25.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 351.792676 s
+
+ Evaluating time step 26.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 342.286717 s
+
+ Evaluating time step 27.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 262.547434 s
+
+ Evaluating time step 28.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1375.072323 s
+
+ Evaluating time step 29.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 2194.321754 s
+
+ Evaluating time step 30.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 413.875695 s
+
+ Evaluating time step 31.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 399.629920 s
+
+ Evaluating time step 32.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 301.540405 s
+
+ Evaluating time step 33.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 267.141942 s
+
+ Evaluating time step 34.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 395.743181 s
+
+ Evaluating time step 35.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 344.621726 s
+
+ Evaluating time step 36.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 338.463845 s
+
+ Evaluating time step 37.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 286.249899 s
+
+ Evaluating time step 38.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1452.305662 s
+
+ Evaluating time step 39.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 235.368721 s
+
+ Evaluating time step 40.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 336.167889 s
+
+ Evaluating time step 41.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 330.312008 s
+
+ Evaluating time step 42.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 226.119626 s
+
+ Evaluating time step 43.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 322.192334 s
+
+ Evaluating time step 44.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 276.303801 s
+
+ Evaluating time step 45.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 333.762515 s
+
+ Evaluating time step 46.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 331.145659 s
+
+ Evaluating time step 47.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 246.974936 s
+
+ Evaluating time step 48.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 494.905774 s
+
+ Evaluating time step 49.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 1822.794388 s
+
+ Evaluating time step 50.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 360.296475 s
+
+ Evaluating time step 51.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 335.994410 s
+
+ Evaluating time step 52.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 298.697296 s
+
+ Evaluating time step 53.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 284.926530 s
+
+ Evaluating time step 54.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 467.407227 s
+
+ Evaluating time step 55.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 422.825060 s
+
+ Evaluating time step 56.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 414.444048 s
+
+ Evaluating time step 57.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 288.643751 s
+
+ Evaluating time step 58.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 902.467721 s
+
+ Evaluating time step 59.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 236.729665 s
+
+ Evaluating time step 60.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 339.145324 s
+
+ Evaluating time step 61.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 329.895743 s
+
+ Evaluating time step 62.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 223.223882 s
+
+ Evaluating time step 63.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 332.676026 s
+
+ Evaluating time step 64.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 279.897658 s
+
+ Evaluating time step 65.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 335.938537 s
+
+ Evaluating time step 66.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 333.624553 s
+
+ Evaluating time step 67.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 410.749558 s
+
+ Evaluating time step 68.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 632.865929 s
+
+ Evaluating time step 69.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 777.349344 s
+
+ Evaluating time step 70.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 362.664070 s
+
+ Evaluating time step 71.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 336.051458 s
+
+ Evaluating time step 72.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 293.920200 s
+
+ Evaluating time step 73.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 293.662396 s
+
+ Evaluating time step 74.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 470.335904 s
+
+ Evaluating time step 75.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 430.078797 s
+
+ Evaluating time step 76.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 418.914240 s
+
+ Evaluating time step 77.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 298.472752 s
+
+ Evaluating time step 78.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 797.822730 s
+
+ Evaluating time step 79.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 384.223504 s
+
+ Evaluating time step 80.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 344.313125 s
+
+ Evaluating time step 81.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 335.092819 s
+
+ Evaluating time step 82.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 176.127878 s
+
+ Evaluating time step 83.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 336.254145 s
+
+ Evaluating time step 84.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 281.887866 s
+
+ Evaluating time step 85.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 353.203321 s
+
+ Evaluating time step 86.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 339.575820 s
+
+ Evaluating time step 87.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 569.196743 s
+
+ Evaluating time step 88.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 746.914136 s
+
+ Evaluating time step 89.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1773.990379 s
+
+ Evaluating time step 90.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 371.685104 s
+
+ Evaluating time step 91.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 351.630825 s
+
+ Evaluating time step 92.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 297.007331 s
+
+ Evaluating time step 93.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 327.946737 s
+
+ Evaluating time step 94.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 511.619455 s
+
+ Evaluating time step 95.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 342.261153 s
+
+ Evaluating time step 96.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 334.319292 s
+
+ Evaluating time step 97.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 299.246440 s
+
+ Evaluating time step 98.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1453.724964 s
+
+ Evaluating time step 99.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 241.065637 s
+
+ Evaluating time step 100.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 341.295186 s
+
+ Evaluating time step 101.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 333.844170 s
+
+ Evaluating time step 102.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 298.327529 s
+
+ Evaluating time step 103.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 904.185774 s
+
+ Evaluating time step 104.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 350.099429 s
+
+ Evaluating time step 105.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 336.309911 s
+
+ Evaluating time step 106.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 327.216781 s
+
+ Evaluating time step 107.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 322.950556 s
+
+ Evaluating time step 108.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1291.615103 s
+
+ Evaluating time step 109.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1798.863775 s
+
+ Evaluating time step 110.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 358.701222 s
+
+ Evaluating time step 111.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 336.275921 s
+
+ Evaluating time step 112.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 291.732400 s
+
+ Evaluating time step 113.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 328.189867 s
+
+ Evaluating time step 114.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 510.679550 s
+
+ Evaluating time step 115.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 423.519102 s
+
+ Evaluating time step 116.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 417.208973 s
+
+ Evaluating time step 117.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 299.504421 s
+
+ Evaluating time step 118.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 325.472270 s
+
+ Evaluating time step 119.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 245.125471 s
+
+ Evaluating time step 120.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 343.793367 s
+
+ Evaluating time step 121.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 336.474848 s
+
+ Evaluating time step 122.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 298.412433 s
+
+ Evaluating time step 123.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 538.704082 s
+
+ Evaluating time step 124.00 of 280.00
+Disabling Active Region Mode
+[Warning: Low precision] 
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 250.181500 s
+
+ Evaluating time step 125.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 346.837908 s
+
+ Evaluating time step 126.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 338.080555 s
+
+ Evaluating time step 127.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 422.636860 s
+
+ Evaluating time step 128.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1504.821134 s
+
+ Evaluating time step 129.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1783.360048 s
+
+ Evaluating time step 130.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 407.791107 s
+
+ Evaluating time step 131.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 391.015139 s
+
+ Evaluating time step 132.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 327.662899 s
+
+ Evaluating time step 133.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 325.823345 s
+
+ Evaluating time step 134.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 511.240379 s
+
+ Evaluating time step 135.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 386.473677 s
+
+ Evaluating time step 136.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 378.978480 s
+
+ Evaluating time step 137.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 769.974687 s
+
+ Evaluating time step 138.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 517.669614 s
+
+ Evaluating time step 139.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 244.325291 s
+
+ Evaluating time step 140.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 340.739161 s
+
+ Evaluating time step 141.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 333.379196 s
+
+ Evaluating time step 142.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 296.228927 s
+
+ Evaluating time step 143.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 321.753605 s
+
+ Evaluating time step 144.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 347.183372 s
+
+ Evaluating time step 145.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 343.605397 s
+
+ Evaluating time step 146.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 339.873740 s
+
+ Evaluating time step 147.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 447.013041 s
+
+ Evaluating time step 148.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1518.428364 s
+
+ Evaluating time step 149.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 2066.043119 s
+
+ Evaluating time step 150.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 347.923017 s
+
+ Evaluating time step 151.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 333.378030 s
+
+ Evaluating time step 152.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 242.017092 s
+
+ Evaluating time step 153.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 2011.180200 s
+
+ Evaluating time step 154.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 509.887568 s
+
+ Evaluating time step 155.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 335.844489 s
+
+ Evaluating time step 156.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 327.833977 s
+
+ Evaluating time step 157.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 843.884099 s
+
+ Evaluating time step 158.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1171.915168 s
+
+ Evaluating time step 159.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 243.925197 s
+
+ Evaluating time step 160.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 341.707690 s
+
+ Evaluating time step 161.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 333.227653 s
+
+ Evaluating time step 162.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 296.916856 s
+
+ Evaluating time step 163.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 396.814885 s
+
+ Evaluating time step 164.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 314.712304 s
+
+ Evaluating time step 165.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 345.559238 s
+
+ Evaluating time step 166.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 338.027206 s
+
+ Evaluating time step 167.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 448.941593 s
+
+ Evaluating time step 168.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1742.411220 s
+
+ Evaluating time step 169.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 2070.727161 s
+
+ Evaluating time step 170.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 342.772140 s
+
+ Evaluating time step 171.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 335.217763 s
+
+ Evaluating time step 172.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 270.905542 s
+
+ Evaluating time step 173.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 2015.699486 s
+
+ Evaluating time step 174.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 515.840400 s
+
+ Evaluating time step 175.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 335.477455 s
+
+ Evaluating time step 176.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 331.557028 s
+
+ Evaluating time step 177.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 850.035569 s
+
+ Evaluating time step 178.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1178.710134 s
+
+ Evaluating time step 179.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 481.759407 s
+
+ Evaluating time step 180.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 341.113756 s
+
+ Evaluating time step 181.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 335.344921 s
+
+ Evaluating time step 182.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 297.196876 s
+
+ Evaluating time step 183.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 356.828363 s
+
+ Evaluating time step 184.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 332.430239 s
+
+ Evaluating time step 185.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 347.638322 s
+
+ Evaluating time step 186.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 338.651621 s
+
+ Evaluating time step 187.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 596.816739 s
+
+ Evaluating time step 188.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1548.035307 s
+
+ Evaluating time step 189.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 2068.945203 s
+
+ Evaluating time step 190.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 357.272412 s
+
+ Evaluating time step 191.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 335.232946 s
+
+ Evaluating time step 192.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 266.251902 s
+
+ Evaluating time step 193.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 2021.124088 s
+
+ Evaluating time step 194.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 509.310161 s
+
+ Evaluating time step 195.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 331.497148 s
+
+ Evaluating time step 196.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 325.940767 s
+
+ Evaluating time step 197.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 840.106677 s
+
+ Evaluating time step 198.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1170.814846 s
+
+ Evaluating time step 199.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 244.920351 s
+
+ Evaluating time step 200.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 343.791835 s
+
+ Evaluating time step 201.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 334.889018 s
+
+ Evaluating time step 202.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 293.189736 s
+
+ Evaluating time step 203.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 346.246290 s
+
+ Evaluating time step 204.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 313.543336 s
+
+ Evaluating time step 205.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 346.008211 s
+
+ Evaluating time step 206.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 339.379296 s
+
+ Evaluating time step 207.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 448.295940 s
+
+ Evaluating time step 208.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1552.873496 s
+
+ Evaluating time step 209.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 2070.801488 s
+
+ Evaluating time step 210.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 349.455420 s
+
+ Evaluating time step 211.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 335.218267 s
+
+ Evaluating time step 212.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 239.969366 s
+
+ Evaluating time step 213.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 1997.450494 s
+
+ Evaluating time step 214.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 511.914706 s
+
+ Evaluating time step 215.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 334.622425 s
+
+ Evaluating time step 216.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 328.787866 s
+
+ Evaluating time step 217.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 845.812488 s
+
+ Evaluating time step 218.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1156.442375 s
+
+ Evaluating time step 219.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 243.558844 s
+
+ Evaluating time step 220.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 345.224880 s
+
+ Evaluating time step 221.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 335.683633 s
+
+ Evaluating time step 222.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 294.141036 s
+
+ Evaluating time step 223.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 356.397274 s
+
+ Evaluating time step 224.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 319.541357 s
+
+ Evaluating time step 225.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 351.087021 s
+
+ Evaluating time step 226.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 341.459256 s
+
+ Evaluating time step 227.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 450.479443 s
+
+ Evaluating time step 228.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1580.038952 s
+
+ Evaluating time step 229.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 2099.726489 s
+
+ Evaluating time step 230.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 354.560174 s
+
+ Evaluating time step 231.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 334.825146 s
+
+ Evaluating time step 232.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 241.794868 s
+
+ Evaluating time step 233.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 2012.667310 s
+
+ Evaluating time step 234.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 508.145383 s
+
+ Evaluating time step 235.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 333.646766 s
+
+ Evaluating time step 236.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 326.917261 s
+
+ Evaluating time step 237.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 839.958510 s
+
+ Evaluating time step 238.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1156.147557 s
+
+ Evaluating time step 239.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 244.734513 s
+
+ Evaluating time step 240.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 342.869744 s
+
+ Evaluating time step 241.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 332.306677 s
+
+ Evaluating time step 242.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 295.657163 s
+
+ Evaluating time step 243.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 348.199137 s
+
+ Evaluating time step 244.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 316.311458 s
+
+ Evaluating time step 245.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 345.753959 s
+
+ Evaluating time step 246.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 338.793318 s
+
+ Evaluating time step 247.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 444.448701 s
+
+ Evaluating time step 248.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1549.858968 s
+
+ Evaluating time step 249.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 2031.007226 s
+
+ Evaluating time step 250.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 349.025079 s
+
+ Evaluating time step 251.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 335.831923 s
+
+ Evaluating time step 252.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 241.468176 s
+
+ Evaluating time step 253.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+[Warning: Low precision] 
+Computation Time: 2016.668054 s
+
+ Evaluating time step 254.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 511.576695 s
+
+ Evaluating time step 255.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 333.631544 s
+
+ Evaluating time step 256.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 328.573355 s
+
+ Evaluating time step 257.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 838.679645 s
+
+ Evaluating time step 258.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 1163.621223 s
+
+ Evaluating time step 259.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 241.904856 s
+
+ Evaluating time step 260.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 344.063611 s
+
+ Evaluating time step 261.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 333.572144 s
+
+ Evaluating time step 262.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 265.731445 s
+
+ Evaluating time step 263.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 288.954738 s
+
+ Evaluating time step 264.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 445.712931 s
+
+ Evaluating time step 265.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 375.350969 s
+
+ Evaluating time step 266.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 358.948486 s
+
+ Evaluating time step 267.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 537.224373 s
+
+ Evaluating time step 268.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 750.963136 s
+
+ Evaluating time step 269.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 110.783986 s
+
+ Evaluating time step 270.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 48.972591 s
+
+ Evaluating time step 271.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 47.310602 s
+
+ Evaluating time step 272.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 47.565099 s
+
+ Evaluating time step 273.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 47.040227 s
+
+ Evaluating time step 274.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 47.347403 s
+
+ Evaluating time step 275.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 47.000014 s
+
+ Evaluating time step 276.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 47.567710 s
+
+ Evaluating time step 277.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 47.320248 s
+
+ Evaluating time step 278.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 47.448512 s
+
+ Evaluating time step 279.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 47.010827 s
+
+ Evaluating time step 280.00 of 280.00
+Disabling Active Region Mode
+Refining solution! ActiveRegion and InteractionRadius disabled!
+Computation Time: 47.283870 s
+
+ Total computation Time: 146614.443736 s
+
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Brave Yourself... The Operation is Completed %
+%                  SCERPA                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
