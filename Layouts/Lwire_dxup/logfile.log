@@ -18,86 +18,11 @@ FOR USED MOLECULES
  
 #############
  
-Layout grid is: 8 x 24 
+Layout grid is: 8 x 26 
 Intermolecular distance: 1.00 nm
 Vertical intermolecular distance: 2.00 nm
 Area occupied by molecules, by considering also drivers: 160.00 nm^2
-Chip area occupied by molecules: 384.00 nm^2
-Creating molecule data file "Data/Data_Molecule.mat"... [DONE] 
-Creating driver geometry file "Data/Data_Driver.mat"... [DONE] 
-Creating driver value file "Data/Values_Driver.mat"... [DONE] 
-Creating output geometry file "Data/Data_Output.mat"... [DONE] 
-Creating clock value file "Data/Fake_Phases.mat"... [DONE] 
-
-SCERPA is ready to start.
-
-Launching SCERPA!
-Loading SCERPA
-No previous simulation found
-Importing Layout...
-Importing Libraries...
-Loading Complete
-Creating distance matrix...
-[BETA] Evaluating Power dissipation...
- | POWER REPORT (drivers are not yet considered in the evaluation)
- |  ~ Total run time: 2.4 ps (240 timesteps, dT = 0.01 ps)
- |  ~ Total dissipated energy: 1110.32 eV (0.1777 fJ) 
- |  ~ Total power dissipation: 74021.00 nW, (1/dT=100.0 GHz) 
- |  ~ Total power density on electrodes: 486.98 W/nm, (Electrode area 152.00 nm^2) 
-Starting Time evaluation
-Evaluating time step 1.00 of 240.00
-{Index in position 1 is invalid. Array indices must be positive integers or logical values.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('applyTranschar', '/home/giuliana/scerpa/Algorithm/applyTranschar.m', 60)" style="font-weight:bold">applyTranschar</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/applyTranschar.m',60,0)">line 60</a>)
-Q1 = dataLowClock(vinIndex,1);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solverE', '/home/giuliana/scerpa/Algorithm/solverE.m', 315)" style="font-weight:bold">solverE</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/solverE.m',315,0)">line 315</a>)
-            [Q1, Q2, Q3, Q4] = applyTranschar(Vout(jj_mol),stack_mol.stack(jj_mol).clock,CK.stack(mm+1));
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', '/usr/local/MATLAB/R2023a/toolbox/matlab/lang/run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2023a/toolbox/matlab/lang/run.m',91,0)">line 91</a>)
-evalin('caller', strcat(script, ';'));
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ScerpaRun', '/home/giuliana/scerpa/Algorithm/ScerpaRun.m', 94)" style="font-weight:bold">ScerpaRun</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/ScerpaRun.m',94,0)">line 94</a>)
-run('solverE.m')
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 50)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',50,0)">line 50</a>)
-                ScerpaRun(option1);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 72)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',72,0)">line 72</a>)
-                    SCERPA('launch',option2);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 83)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',83,0)">line 83</a>)
-                    SCERPA('generateLaunch',option1,option2);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('launchScript', '/home/giuliana/BBchar/Layouts/Lwire_dxup/launchScript.m', 134)" style="font-weight:bold">launchScript</a> (<a href="matlab: opentoline('/home/giuliana/BBchar/Layouts/Lwire_dxup/launchScript.m',134,0)">line 134</a>)
-        SCERPA('generateLaunchView',circuit,settings,plotSettings);
-} 
-launchScript
-Generating SCERPA layout!
-Running SCERPA Version 4.0 
- - Politecnico di Torino |  VLSI nanocomputing
- - www.vlsilab.polito.it
-
- 
-#############
-RELATED WORKS
- 
-FOR SCERPA
-<1> Beretta G., Ardesi Y., Graziano M., and Piccinini G., "Multi-Molecule Field-Coupled Nanocomputing for the Implementation of a Neuron," in IEEE Transactions on Nanotechnology, vol. 21, pp. 52-59, 2022, doi: 10.1109/TNANO.2022.3143720 </1>
-<2> Ardesi Y., Turvani G., Graziano M., and Piccinini G., "SCERPA Simulation of Clocked Molecular Field-Coupling Nanocomputing," in {IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 29, no. 3, pp. 558-567, March 2021, doi: 10.1109/TVLSI.2020.3045198 </2>
-<3> Ardesi Y., Wang R., Turvani G., Piccinini G., and Graziano M., "SCERPA: A Self-Consistent Algorithm for the Evaluation of the Information Propagation in Molecular Field-Coupled Nanocomputing," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 39, no. 10, pp. 2749-2760, Oct. 2020, doi: 10.1109/TCAD.2019.2960360 </3>
-<4> Wang R., Chilla M., Palucci A., Graziano M., and Piccinini G., "An effective algorithm for clocked field-coupled nanocomputing paradigm," {2016 IEEE Nanotechnology Materials and Devices Conference (NMDC), 2016, pp. 1-2, doi: 10.1109/NMDC.2016.7777166 </4>
-
-FOR USED MOLECULES
-<1> Arima V., et al. "Toward quantum-dot cellular automata units: thiolated-carbazole linked bisferrocenes." Nanoscale 4.3 (2012): 813-823. DOI: 10.1039/C1NR10988J </1>
- 
-#############
- 
-Layout grid is: 8 x 24 
-Intermolecular distance: 1.00 nm
-Vertical intermolecular distance: 2.00 nm
-Area occupied by molecules, by considering also drivers: 160.00 nm^2
-Chip area occupied by molecules: 384.00 nm^2
+Chip area occupied by molecules: 416.00 nm^2
 Creating molecule data file "Data/Data_Molecule.mat"... [DONE] 
 Creating driver geometry file "Data/Data_Driver.mat"... [DONE] 
 Creating driver value file "Data/Values_Driver.mat"... [DONE] 
@@ -119,1737 +44,1208 @@ Creating distance matrix...
  |  ~ Total dissipated energy: 1110.32 eV (0.1777 fJ) 
  |  ~ Total power dissipation: 74021.00 nW, (1/dT=100.0 GHz) 
  |  ~ Total power density on electrodes: 486.98 W/nm, (Electrode area 152.00 nm^2) 
-Starting Time evaluation
-Evaluating time step 1.00 of 240.00
-{Index in position 1 is invalid. Array indices must be positive integers or logical values.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('applyTranschar', '/home/giuliana/scerpa/Algorithm/applyTranschar.m', 60)" style="font-weight:bold">applyTranschar</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/applyTranschar.m',60,0)">line 60</a>)
-Q1 = dataLowClock(vinIndex,1);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solverE', '/home/giuliana/scerpa/Algorithm/solverE.m', 315)" style="font-weight:bold">solverE</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/solverE.m',315,0)">line 315</a>)
-            [Q1, Q2, Q3, Q4] = applyTranschar(Vout(jj_mol),stack_mol.stack(jj_mol).clock,CK.stack(mm+1));
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', '/usr/local/MATLAB/R2023a/toolbox/matlab/lang/run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2023a/toolbox/matlab/lang/run.m',91,0)">line 91</a>)
-evalin('caller', strcat(script, ';'));
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ScerpaRun', '/home/giuliana/scerpa/Algorithm/ScerpaRun.m', 94)" style="font-weight:bold">ScerpaRun</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/ScerpaRun.m',94,0)">line 94</a>)
-run('solverE.m')
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 50)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',50,0)">line 50</a>)
-                ScerpaRun(option1);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 72)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',72,0)">line 72</a>)
-                    SCERPA('launch',option2);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 83)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',83,0)">line 83</a>)
-                    SCERPA('generateLaunch',option1,option2);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('launchScript', '/home/giuliana/BBchar/Layouts/Lwire_dxup/launchScript.m', 134)" style="font-weight:bold">launchScript</a> (<a href="matlab: opentoline('/home/giuliana/BBchar/Layouts/Lwire_dxup/launchScript.m',134,0)">line 134</a>)
-        SCERPA('generateLaunchView',circuit,settings,plotSettings);
-} 
-launchScript
-Generating SCERPA layout!
-Running SCERPA Version 4.0 
- - Politecnico di Torino |  VLSI nanocomputing
- - www.vlsilab.polito.it
-
- 
-#############
-RELATED WORKS
- 
-FOR SCERPA
-<1> Beretta G., Ardesi Y., Graziano M., and Piccinini G., "Multi-Molecule Field-Coupled Nanocomputing for the Implementation of a Neuron," in IEEE Transactions on Nanotechnology, vol. 21, pp. 52-59, 2022, doi: 10.1109/TNANO.2022.3143720 </1>
-<2> Ardesi Y., Turvani G., Graziano M., and Piccinini G., "SCERPA Simulation of Clocked Molecular Field-Coupling Nanocomputing," in {IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 29, no. 3, pp. 558-567, March 2021, doi: 10.1109/TVLSI.2020.3045198 </2>
-<3> Ardesi Y., Wang R., Turvani G., Piccinini G., and Graziano M., "SCERPA: A Self-Consistent Algorithm for the Evaluation of the Information Propagation in Molecular Field-Coupled Nanocomputing," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 39, no. 10, pp. 2749-2760, Oct. 2020, doi: 10.1109/TCAD.2019.2960360 </3>
-<4> Wang R., Chilla M., Palucci A., Graziano M., and Piccinini G., "An effective algorithm for clocked field-coupled nanocomputing paradigm," {2016 IEEE Nanotechnology Materials and Devices Conference (NMDC), 2016, pp. 1-2, doi: 10.1109/NMDC.2016.7777166 </4>
-
-FOR USED MOLECULES
-<1> Arima V., et al. "Toward quantum-dot cellular automata units: thiolated-carbazole linked bisferrocenes." Nanoscale 4.3 (2012): 813-823. DOI: 10.1039/C1NR10988J </1>
- 
-#############
- 
-Layout grid is: 8 x 24 
-Intermolecular distance: 1.00 nm
-Vertical intermolecular distance: 2.00 nm
-Area occupied by molecules, by considering also drivers: 160.00 nm^2
-Chip area occupied by molecules: 384.00 nm^2
-Creating molecule data file "Data/Data_Molecule.mat"... [DONE] 
-Creating driver geometry file "Data/Data_Driver.mat"... [DONE] 
-Creating driver value file "Data/Values_Driver.mat"... [DONE] 
-Creating output geometry file "Data/Data_Output.mat"... [DONE] 
-Creating clock value file "Data/Fake_Phases.mat"... [DONE] 
-
-SCERPA is ready to start.
-
-Launching SCERPA!
-Loading SCERPA
-[Warning: Directory already exists.] 
-Importing Layout...
-Importing Libraries...
-Loading Complete
-Creating distance matrix...
-[BETA] Evaluating Power dissipation...
- | POWER REPORT (drivers are not yet considered in the evaluation)
- |  ~ Total run time: 2.4 ps (240 timesteps, dT = 0.01 ps)
- |  ~ Total dissipated energy: 1110.32 eV (0.1777 fJ) 
- |  ~ Total power dissipation: 74021.00 nW, (1/dT=100.0 GHz) 
- |  ~ Total power density on electrodes: 486.98 W/nm, (Electrode area 152.00 nm^2) 
-Starting Time evaluation
-Evaluating time step 1.00 of 240.00
-{Index in position 1 is invalid. Array indices must be positive integers or logical values.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('applyTranschar', '/home/giuliana/scerpa/Algorithm/applyTranschar.m', 60)" style="font-weight:bold">applyTranschar</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/applyTranschar.m',60,0)">line 60</a>)
-Q1 = dataLowClock(vinIndex,1);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solverE', '/home/giuliana/scerpa/Algorithm/solverE.m', 315)" style="font-weight:bold">solverE</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/solverE.m',315,0)">line 315</a>)
-            [Q1, Q2, Q3, Q4] = applyTranschar(Vout(jj_mol),stack_mol.stack(jj_mol).clock,CK.stack(mm+1));
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', '/usr/local/MATLAB/R2023a/toolbox/matlab/lang/run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2023a/toolbox/matlab/lang/run.m',91,0)">line 91</a>)
-evalin('caller', strcat(script, ';'));
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ScerpaRun', '/home/giuliana/scerpa/Algorithm/ScerpaRun.m', 94)" style="font-weight:bold">ScerpaRun</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/ScerpaRun.m',94,0)">line 94</a>)
-run('solverE.m')
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 50)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',50,0)">line 50</a>)
-                ScerpaRun(option1);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 72)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',72,0)">line 72</a>)
-                    SCERPA('launch',option2);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 83)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',83,0)">line 83</a>)
-                    SCERPA('generateLaunch',option1,option2);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('launchScript', '/home/giuliana/BBchar/Layouts/Lwire_dxup/launchScript.m', 134)" style="font-weight:bold">launchScript</a> (<a href="matlab: opentoline('/home/giuliana/BBchar/Layouts/Lwire_dxup/launchScript.m',134,0)">line 134</a>)
-        SCERPA('generateLaunchView',circuit,settings,plotSettings);
-} 
-launchScript
-if system_dependent('IsDebugMode')==1, dbquit; end
-launchScript
-Generating SCERPA layout!
-Running SCERPA Version 4.0 
- - Politecnico di Torino |  VLSI nanocomputing
- - www.vlsilab.polito.it
-
- 
-#############
-RELATED WORKS
- 
-FOR SCERPA
-<1> Beretta G., Ardesi Y., Graziano M., and Piccinini G., "Multi-Molecule Field-Coupled Nanocomputing for the Implementation of a Neuron," in IEEE Transactions on Nanotechnology, vol. 21, pp. 52-59, 2022, doi: 10.1109/TNANO.2022.3143720 </1>
-<2> Ardesi Y., Turvani G., Graziano M., and Piccinini G., "SCERPA Simulation of Clocked Molecular Field-Coupling Nanocomputing," in {IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 29, no. 3, pp. 558-567, March 2021, doi: 10.1109/TVLSI.2020.3045198 </2>
-<3> Ardesi Y., Wang R., Turvani G., Piccinini G., and Graziano M., "SCERPA: A Self-Consistent Algorithm for the Evaluation of the Information Propagation in Molecular Field-Coupled Nanocomputing," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 39, no. 10, pp. 2749-2760, Oct. 2020, doi: 10.1109/TCAD.2019.2960360 </3>
-<4> Wang R., Chilla M., Palucci A., Graziano M., and Piccinini G., "An effective algorithm for clocked field-coupled nanocomputing paradigm," {2016 IEEE Nanotechnology Materials and Devices Conference (NMDC), 2016, pp. 1-2, doi: 10.1109/NMDC.2016.7777166 </4>
-
-FOR USED MOLECULES
-<1> Arima V., et al. "Toward quantum-dot cellular automata units: thiolated-carbazole linked bisferrocenes." Nanoscale 4.3 (2012): 813-823. DOI: 10.1039/C1NR10988J </1>
- 
-#############
- 
-Layout grid is: 8 x 24 
-Intermolecular distance: 1.00 nm
-Vertical intermolecular distance: 2.00 nm
-Area occupied by molecules, by considering also drivers: 160.00 nm^2
-Chip area occupied by molecules: 384.00 nm^2
-Creating molecule data file "Data/Data_Molecule.mat"... [DONE] 
-Creating driver geometry file "Data/Data_Driver.mat"... [DONE] 
-Creating driver value file "Data/Values_Driver.mat"... [DONE] 
-Creating output geometry file "Data/Data_Output.mat"... [DONE] 
-Creating clock value file "Data/Fake_Phases.mat"... [DONE] 
-
-SCERPA is ready to start.
-
-Launching SCERPA!
-Loading SCERPA
-[Warning: Directory already exists.] 
-Importing Layout...
-Importing Libraries...
-Loading Complete
-Creating distance matrix...
-[BETA] Evaluating Power dissipation...
- | POWER REPORT (drivers are not yet considered in the evaluation)
- |  ~ Total run time: 2.4 ps (240 timesteps, dT = 0.01 ps)
- |  ~ Total dissipated energy: 1110.32 eV (0.1777 fJ) 
- |  ~ Total power dissipation: 74021.00 nW, (1/dT=100.0 GHz) 
- |  ~ Total power density on electrodes: 486.98 W/nm, (Electrode area 152.00 nm^2) 
-Starting Time evaluation
-Evaluating time step 1.00 of 240.00
-{Index in position 1 is invalid. Array indices must be positive integers or logical values.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('applyTranschar', '/home/giuliana/scerpa/Algorithm/applyTranschar.m', 60)" style="font-weight:bold">applyTranschar</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/applyTranschar.m',60,0)">line 60</a>)
-Q1 = dataLowClock(vinIndex,1);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solverE', '/home/giuliana/scerpa/Algorithm/solverE.m', 315)" style="font-weight:bold">solverE</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/solverE.m',315,0)">line 315</a>)
-            [Q1, Q2, Q3, Q4] = applyTranschar(Vout(jj_mol),stack_mol.stack(jj_mol).clock,CK.stack(mm+1));
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', '/usr/local/MATLAB/R2023a/toolbox/matlab/lang/run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2023a/toolbox/matlab/lang/run.m',91,0)">line 91</a>)
-evalin('caller', strcat(script, ';'));
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ScerpaRun', '/home/giuliana/scerpa/Algorithm/ScerpaRun.m', 94)" style="font-weight:bold">ScerpaRun</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/ScerpaRun.m',94,0)">line 94</a>)
-run('solverE.m')
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 50)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',50,0)">line 50</a>)
-                ScerpaRun(option1);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 72)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',72,0)">line 72</a>)
-                    SCERPA('launch',option2);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 83)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',83,0)">line 83</a>)
-                    SCERPA('generateLaunch',option1,option2);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('launchScript', '/home/giuliana/BBchar/Layouts/Lwire_dxup/launchScript.m', 134)" style="font-weight:bold">launchScript</a> (<a href="matlab: opentoline('/home/giuliana/BBchar/Layouts/Lwire_dxup/launchScript.m',134,0)">line 134</a>)
-        SCERPA('generateLaunchView',circuit,settings,plotSettings);
-} 
-launchScript
-Generating SCERPA layout!
-Running SCERPA Version 4.0 
- - Politecnico di Torino |  VLSI nanocomputing
- - www.vlsilab.polito.it
-
- 
-#############
-RELATED WORKS
- 
-FOR SCERPA
-<1> Beretta G., Ardesi Y., Graziano M., and Piccinini G., "Multi-Molecule Field-Coupled Nanocomputing for the Implementation of a Neuron," in IEEE Transactions on Nanotechnology, vol. 21, pp. 52-59, 2022, doi: 10.1109/TNANO.2022.3143720 </1>
-<2> Ardesi Y., Turvani G., Graziano M., and Piccinini G., "SCERPA Simulation of Clocked Molecular Field-Coupling Nanocomputing," in {IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 29, no. 3, pp. 558-567, March 2021, doi: 10.1109/TVLSI.2020.3045198 </2>
-<3> Ardesi Y., Wang R., Turvani G., Piccinini G., and Graziano M., "SCERPA: A Self-Consistent Algorithm for the Evaluation of the Information Propagation in Molecular Field-Coupled Nanocomputing," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 39, no. 10, pp. 2749-2760, Oct. 2020, doi: 10.1109/TCAD.2019.2960360 </3>
-<4> Wang R., Chilla M., Palucci A., Graziano M., and Piccinini G., "An effective algorithm for clocked field-coupled nanocomputing paradigm," {2016 IEEE Nanotechnology Materials and Devices Conference (NMDC), 2016, pp. 1-2, doi: 10.1109/NMDC.2016.7777166 </4>
-
-FOR USED MOLECULES
-<1> Arima V., et al. "Toward quantum-dot cellular automata units: thiolated-carbazole linked bisferrocenes." Nanoscale 4.3 (2012): 813-823. DOI: 10.1039/C1NR10988J </1>
- 
-#############
- 
-Layout grid is: 8 x 24 
-Intermolecular distance: 1.00 nm
-Vertical intermolecular distance: 2.00 nm
-Area occupied by molecules, by considering also drivers: 160.00 nm^2
-Chip area occupied by molecules: 384.00 nm^2
-Creating molecule data file "Data/Data_Molecule.mat"... [DONE] 
-Creating driver geometry file "Data/Data_Driver.mat"... [DONE] 
-Creating driver value file "Data/Values_Driver.mat"... [DONE] 
-Creating output geometry file "Data/Data_Output.mat"... [DONE] 
-Creating clock value file "Data/Fake_Phases.mat"... [DONE] 
-
-SCERPA is ready to start.
-
-Launching SCERPA!
-Loading SCERPA
-[Warning: Directory already exists.] 
-Importing Layout...
-Importing Libraries...
-Loading Complete
-Creating distance matrix...
-[BETA] Evaluating Power dissipation...
- | POWER REPORT (drivers are not yet considered in the evaluation)
- |  ~ Total run time: 2.4 ps (240 timesteps, dT = 0.01 ps)
- |  ~ Total dissipated energy: 1110.32 eV (0.1777 fJ) 
- |  ~ Total power dissipation: 74021.00 nW, (1/dT=100.0 GHz) 
- |  ~ Total power density on electrodes: 486.98 W/nm, (Electrode area 152.00 nm^2) 
-Starting Time evaluation
-Evaluating time step 1.00 of 240.00
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-{Index in position 1 is invalid. Array indices must be positive integers or logical values.
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('applyTranschar', '/home/giuliana/scerpa/Algorithm/applyTranschar.m', 60)" style="font-weight:bold">applyTranschar</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/applyTranschar.m',60,0)">line 60</a>)
-Q1 = dataLowClock(vinIndex,1);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('solverE', '/home/giuliana/scerpa/Algorithm/solverE.m', 315)" style="font-weight:bold">solverE</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/solverE.m',315,0)">line 315</a>)
-            [Q1, Q2, Q3, Q4] = applyTranschar(Vout(jj_mol),stack_mol.stack(jj_mol).clock,CK.stack(mm+1));
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', '/usr/local/MATLAB/R2023a/toolbox/matlab/lang/run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2023a/toolbox/matlab/lang/run.m',91,0)">line 91</a>)
-evalin('caller', strcat(script, ';'));
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ScerpaRun', '/home/giuliana/scerpa/Algorithm/ScerpaRun.m', 94)" style="font-weight:bold">ScerpaRun</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/Algorithm/ScerpaRun.m',94,0)">line 94</a>)
-run('solverE.m')
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 50)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',50,0)">line 50</a>)
-                ScerpaRun(option1);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 72)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',72,0)">line 72</a>)
-                    SCERPA('launch',option2);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('SCERPA', '/home/giuliana/scerpa/SCERPA.m', 83)" style="font-weight:bold">SCERPA</a> (<a href="matlab: opentoline('/home/giuliana/scerpa/SCERPA.m',83,0)">line 83</a>)
-                    SCERPA('generateLaunch',option1,option2);
-
-Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('launchScript', '/home/giuliana/BBchar/Layouts/Lwire_dxup/launchScript.m', 134)" style="font-weight:bold">launchScript</a> (<a href="matlab: opentoline('/home/giuliana/BBchar/Layouts/Lwire_dxup/launchScript.m',134,0)">line 134</a>)
-        SCERPA('generateLaunchView',circuit,settings,plotSettings);
-} 
-opentoline('/home/giuliana/scerpa/SCERPA.m',50,0)
-opentoline('/home/giuliana/scerpa/Algorithm/solverE.m',315,0)
-if system_dependent('IsDebugMode')==1, dbquit; end
-launchScript
-Generating SCERPA layout!
-Running SCERPA Version 4.0 
- - Politecnico di Torino |  VLSI nanocomputing
- - www.vlsilab.polito.it
-
- 
-#############
-RELATED WORKS
- 
-FOR SCERPA
-<1> Beretta G., Ardesi Y., Graziano M., and Piccinini G., "Multi-Molecule Field-Coupled Nanocomputing for the Implementation of a Neuron," in IEEE Transactions on Nanotechnology, vol. 21, pp. 52-59, 2022, doi: 10.1109/TNANO.2022.3143720 </1>
-<2> Ardesi Y., Turvani G., Graziano M., and Piccinini G., "SCERPA Simulation of Clocked Molecular Field-Coupling Nanocomputing," in {IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 29, no. 3, pp. 558-567, March 2021, doi: 10.1109/TVLSI.2020.3045198 </2>
-<3> Ardesi Y., Wang R., Turvani G., Piccinini G., and Graziano M., "SCERPA: A Self-Consistent Algorithm for the Evaluation of the Information Propagation in Molecular Field-Coupled Nanocomputing," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 39, no. 10, pp. 2749-2760, Oct. 2020, doi: 10.1109/TCAD.2019.2960360 </3>
-<4> Wang R., Chilla M., Palucci A., Graziano M., and Piccinini G., "An effective algorithm for clocked field-coupled nanocomputing paradigm," {2016 IEEE Nanotechnology Materials and Devices Conference (NMDC), 2016, pp. 1-2, doi: 10.1109/NMDC.2016.7777166 </4>
-
-FOR USED MOLECULES
-<1> Arima V., et al. "Toward quantum-dot cellular automata units: thiolated-carbazole linked bisferrocenes." Nanoscale 4.3 (2012): 813-823. DOI: 10.1039/C1NR10988J </1>
- 
-#############
- 
-Layout grid is: 8 x 24 
-Intermolecular distance: 1.00 nm
-Vertical intermolecular distance: 2.00 nm
-Area occupied by molecules, by considering also drivers: 160.00 nm^2
-Chip area occupied by molecules: 384.00 nm^2
-Creating molecule data file "Data/Data_Molecule.mat"... [DONE] 
-Creating driver geometry file "Data/Data_Driver.mat"... [DONE] 
-Creating driver value file "Data/Values_Driver.mat"... [DONE] 
-Creating output geometry file "Data/Data_Output.mat"... [DONE] 
-Creating clock value file "Data/Fake_Phases.mat"... [DONE] 
-
-SCERPA is ready to start.
-
-Launching SCERPA!
-Loading SCERPA
-[Warning: Directory already exists.] 
-Importing Layout...
-Importing Libraries...
-Loading Complete
-Creating distance matrix...
-[BETA] Evaluating Power dissipation...
- | POWER REPORT (drivers are not yet considered in the evaluation)
- |  ~ Total run time: 2.4 ps (240 timesteps, dT = 0.01 ps)
- |  ~ Total dissipated energy: 1110.32 eV (0.1777 fJ) 
- |  ~ Total power dissipation: 74021.00 nW, (1/dT=100.0 GHz) 
- |  ~ Total power density on electrodes: 486.98 W/nm, (Electrode area 152.00 nm^2) 
-Starting Time evaluation
-Evaluating time step 1.00 of 240.00
-Vout(jj_mol)
-
-ans =
-
-   -0.1410
-
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-V_dot_1 = driver_charge1.q/r_dot_11 + driver_charge2.q/r_dot_21 + ...
-    driver_charge3.q/r_dot_31 + driver_charge4.q/r_dot_41
-[Warning: Entering debug mode is only supported within running MATLAB code files.] 
-[Warning: Entering debug mode is only supported within running MATLAB code files.] 
-[Warning: Entering debug mode is only supported within running MATLAB code files.] 
-[Warning: Entering debug mode is only supported within running MATLAB code files.] 
-
-V_dot_1 =
-
-   Inf
-
-dbup 1;
-if system_dependent('IsDebugMode')==1, dbquit; end
-launchScript
-Generating SCERPA layout!
-Running SCERPA Version 4.0 
- - Politecnico di Torino |  VLSI nanocomputing
- - www.vlsilab.polito.it
-
- 
-#############
-RELATED WORKS
- 
-FOR SCERPA
-<1> Beretta G., Ardesi Y., Graziano M., and Piccinini G., "Multi-Molecule Field-Coupled Nanocomputing for the Implementation of a Neuron," in IEEE Transactions on Nanotechnology, vol. 21, pp. 52-59, 2022, doi: 10.1109/TNANO.2022.3143720 </1>
-<2> Ardesi Y., Turvani G., Graziano M., and Piccinini G., "SCERPA Simulation of Clocked Molecular Field-Coupling Nanocomputing," in {IEEE Transactions on Very Large Scale Integration (VLSI) Systems, vol. 29, no. 3, pp. 558-567, March 2021, doi: 10.1109/TVLSI.2020.3045198 </2>
-<3> Ardesi Y., Wang R., Turvani G., Piccinini G., and Graziano M., "SCERPA: A Self-Consistent Algorithm for the Evaluation of the Information Propagation in Molecular Field-Coupled Nanocomputing," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 39, no. 10, pp. 2749-2760, Oct. 2020, doi: 10.1109/TCAD.2019.2960360 </3>
-<4> Wang R., Chilla M., Palucci A., Graziano M., and Piccinini G., "An effective algorithm for clocked field-coupled nanocomputing paradigm," {2016 IEEE Nanotechnology Materials and Devices Conference (NMDC), 2016, pp. 1-2, doi: 10.1109/NMDC.2016.7777166 </4>
-
-FOR USED MOLECULES
-<1> Arima V., et al. "Toward quantum-dot cellular automata units: thiolated-carbazole linked bisferrocenes." Nanoscale 4.3 (2012): 813-823. DOI: 10.1039/C1NR10988J </1>
- 
-#############
- 
-Layout grid is: 8 x 24 
-Intermolecular distance: 1.00 nm
-Vertical intermolecular distance: 2.00 nm
-Area occupied by molecules, by considering also drivers: 152.00 nm^2
-Chip area occupied by molecules: 384.00 nm^2
-Creating molecule data file "Data/Data_Molecule.mat"... [DONE] 
-Creating driver geometry file "Data/Data_Driver.mat"... [DONE] 
-Creating driver value file "Data/Values_Driver.mat"... [DONE] 
-Creating output geometry file "Data/Data_Output.mat"... [DONE] 
-Creating clock value file "Data/Fake_Phases.mat"... [DONE] 
-
-SCERPA is ready to start.
-
-Launching SCERPA!
-Loading SCERPA
-[Warning: Directory already exists.] 
-Importing Layout...
-Importing Libraries...
-Loading Complete
-Creating distance matrix...
-[BETA] Evaluating Power dissipation...
- | POWER REPORT (drivers are not yet considered in the evaluation)
- |  ~ Total run time: 2.4 ps (240 timesteps, dT = 0.01 ps)
- |  ~ Total dissipated energy: 1051.88 eV (0.1683 fJ) 
- |  ~ Total power dissipation: 70125.16 nW, (1/dT=100.0 GHz) 
- |  ~ Total power density on electrodes: 486.98 W/nm, (Electrode area 144.00 nm^2) 
 Starting Time evaluation
 Evaluating time step 1.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.374241 s
+Computation Time: 0.524569 s
 
  Evaluating time step 2.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.134378 s
+Computation Time: 2.613042 s
 
  Evaluating time step 3.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.113758 s
+Computation Time: 1.687914 s
 
  Evaluating time step 4.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.834965 s
+Computation Time: 0.981731 s
 
  Evaluating time step 5.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.992716 s
+Computation Time: 2.138993 s
 
  Evaluating time step 6.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 2.869907 s
+Computation Time: 1.459610 s
 
  Evaluating time step 7.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.565466 s
+Computation Time: 0.985382 s
 
  Evaluating time step 8.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.720454 s
+Computation Time: 1.694222 s
 
  Evaluating time step 9.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.802232 s
+Computation Time: 1.038442 s
 
  Evaluating time step 10.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.432628 s
+Computation Time: 2.032638 s
 
  Evaluating time step 11.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.449845 s
+Computation Time: 1.289944 s
 
  Evaluating time step 12.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.897590 s
+Computation Time: 1.991424 s
 
  Evaluating time step 13.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.450538 s
+Computation Time: 1.435724 s
 
  Evaluating time step 14.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 13.444331 s
+Computation Time: 5.476973 s
 
  Evaluating time step 15.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.615425 s
+Computation Time: 2.188875 s
 
  Evaluating time step 16.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.460418 s
+Computation Time: 1.555566 s
 
  Evaluating time step 17.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.786678 s
+Computation Time: 2.124988 s
 
  Evaluating time step 18.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.563450 s
+Computation Time: 1.354791 s
 
  Evaluating time step 19.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.708250 s
+Computation Time: 1.390934 s
 
  Evaluating time step 20.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.644041 s
+Computation Time: 1.228684 s
 
  Evaluating time step 21.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.530619 s
+Computation Time: 0.875457 s
 
  Evaluating time step 22.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 14.903836 s
+Computation Time: 4.849576 s
 
  Evaluating time step 23.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.210018 s
+Computation Time: 3.285997 s
 
  Evaluating time step 24.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.985335 s
+Computation Time: 1.100020 s
 
  Evaluating time step 25.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.343090 s
+Computation Time: 2.119147 s
 
  Evaluating time step 26.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.256770 s
+Computation Time: 1.380052 s
 
  Evaluating time step 27.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.281343 s
+Computation Time: 1.040695 s
 
  Evaluating time step 28.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.756007 s
+Computation Time: 1.610363 s
 
  Evaluating time step 29.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.512346 s
+Computation Time: 1.196543 s
 
  Evaluating time step 30.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.619921 s
+Computation Time: 2.048708 s
 
  Evaluating time step 31.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.732065 s
+Computation Time: 1.332467 s
 
  Evaluating time step 32.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.585255 s
+Computation Time: 2.020078 s
 
  Evaluating time step 33.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.318746 s
+Computation Time: 1.445850 s
 
  Evaluating time step 34.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 16.135123 s
+Computation Time: 5.558218 s
 
  Evaluating time step 35.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.589732 s
+Computation Time: 2.218586 s
 
  Evaluating time step 36.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.434956 s
+Computation Time: 1.562583 s
 
  Evaluating time step 37.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.807530 s
+Computation Time: 2.155535 s
 
  Evaluating time step 38.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.572084 s
+Computation Time: 1.383710 s
 
  Evaluating time step 39.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.699975 s
+Computation Time: 1.394432 s
 
  Evaluating time step 40.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.636276 s
+Computation Time: 1.239641 s
 
  Evaluating time step 41.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.512342 s
+Computation Time: 0.874868 s
 
  Evaluating time step 42.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 14.958353 s
+Computation Time: 4.923992 s
 
  Evaluating time step 43.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.197151 s
+Computation Time: 3.328229 s
 
  Evaluating time step 44.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.965827 s
+Computation Time: 1.113019 s
 
  Evaluating time step 45.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.324056 s
+Computation Time: 2.143465 s
 
  Evaluating time step 46.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.258882 s
+Computation Time: 1.417765 s
 
  Evaluating time step 47.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.290373 s
+Computation Time: 1.054181 s
 
  Evaluating time step 48.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.717990 s
+Computation Time: 1.620697 s
 
  Evaluating time step 49.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.514975 s
+Computation Time: 1.206811 s
 
  Evaluating time step 50.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.575895 s
+Computation Time: 2.057659 s
 
  Evaluating time step 51.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.720962 s
+Computation Time: 1.291746 s
 
  Evaluating time step 52.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.592941 s
+Computation Time: 1.997400 s
 
  Evaluating time step 53.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.299243 s
+Computation Time: 1.449730 s
 
  Evaluating time step 54.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 16.141278 s
+Computation Time: 5.516443 s
 
  Evaluating time step 55.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.577169 s
+Computation Time: 2.213745 s
 
  Evaluating time step 56.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.453235 s
+Computation Time: 1.558419 s
 
  Evaluating time step 57.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.782316 s
+Computation Time: 2.130344 s
 
  Evaluating time step 58.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.560462 s
+Computation Time: 1.359285 s
 
  Evaluating time step 59.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.700756 s
+Computation Time: 1.408681 s
 
  Evaluating time step 60.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.616319 s
+Computation Time: 1.252673 s
 
  Evaluating time step 61.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.535896 s
+Computation Time: 0.877201 s
 
  Evaluating time step 62.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 14.915407 s
+Computation Time: 4.890270 s
 
  Evaluating time step 63.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.189188 s
+Computation Time: 3.365551 s
 
  Evaluating time step 64.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.949688 s
+Computation Time: 1.269825 s
 
  Evaluating time step 65.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.364446 s
+Computation Time: 2.127330 s
 
  Evaluating time step 66.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.273286 s
+Computation Time: 1.398727 s
 
  Evaluating time step 67.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.296488 s
+Computation Time: 1.067061 s
 
  Evaluating time step 68.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.752282 s
+Computation Time: 1.631631 s
 
  Evaluating time step 69.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.505584 s
+Computation Time: 1.197982 s
 
  Evaluating time step 70.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.568618 s
+Computation Time: 2.036624 s
 
  Evaluating time step 71.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.723514 s
+Computation Time: 1.270483 s
 
  Evaluating time step 72.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.587148 s
+Computation Time: 2.012847 s
 
  Evaluating time step 73.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.304310 s
+Computation Time: 1.881911 s
 
  Evaluating time step 74.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 16.100665 s
+Computation Time: 5.459719 s
 
  Evaluating time step 75.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.577601 s
+Computation Time: 2.215549 s
 
  Evaluating time step 76.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.434580 s
+Computation Time: 1.548893 s
 
  Evaluating time step 77.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.798412 s
+Computation Time: 2.157108 s
 
  Evaluating time step 78.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.558890 s
+Computation Time: 1.373799 s
 
  Evaluating time step 79.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.712776 s
+Computation Time: 1.396578 s
 
  Evaluating time step 80.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.636318 s
+Computation Time: 1.233704 s
 
  Evaluating time step 81.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.515198 s
+Computation Time: 0.881586 s
 
  Evaluating time step 82.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 14.850314 s
+Computation Time: 4.907685 s
 
  Evaluating time step 83.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.220078 s
+Computation Time: 3.428296 s
 
  Evaluating time step 84.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.978056 s
+Computation Time: 1.360379 s
 
  Evaluating time step 85.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.337959 s
+Computation Time: 2.130489 s
 
  Evaluating time step 86.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.268241 s
+Computation Time: 1.398212 s
 
  Evaluating time step 87.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.307052 s
+Computation Time: 1.062665 s
 
  Evaluating time step 88.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.775390 s
+Computation Time: 1.614091 s
 
  Evaluating time step 89.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.500359 s
+Computation Time: 1.216409 s
 
  Evaluating time step 90.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.574607 s
+Computation Time: 2.015030 s
 
  Evaluating time step 91.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.714276 s
+Computation Time: 1.232692 s
 
  Evaluating time step 92.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.572947 s
+Computation Time: 2.032497 s
 
  Evaluating time step 93.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.306106 s
+Computation Time: 3.957432 s
 
  Evaluating time step 94.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 16.141164 s
+Computation Time: 5.470060 s
 
  Evaluating time step 95.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.577799 s
+Computation Time: 2.201581 s
 
  Evaluating time step 96.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.430790 s
+Computation Time: 1.559370 s
 
  Evaluating time step 97.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.793750 s
+Computation Time: 2.132998 s
 
  Evaluating time step 98.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.574968 s
+Computation Time: 1.368444 s
 
  Evaluating time step 99.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.695711 s
+Computation Time: 1.396832 s
 
  Evaluating time step 100.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.647408 s
+Computation Time: 1.248030 s
 
  Evaluating time step 101.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.531646 s
+Computation Time: 0.881963 s
 
  Evaluating time step 102.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 14.935486 s
+Computation Time: 4.877319 s
 
  Evaluating time step 103.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.218898 s
+Computation Time: 3.036879 s
 
  Evaluating time step 104.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.044419 s
+Computation Time: 1.298003 s
 
  Evaluating time step 105.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.356423 s
+Computation Time: 1.246780 s
 
  Evaluating time step 106.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.262420 s
+Computation Time: 0.780717 s
 
  Evaluating time step 107.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.282742 s
+Computation Time: 1.109011 s
 
  Evaluating time step 108.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.778767 s
+Computation Time: 1.554859 s
 
  Evaluating time step 109.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.548062 s
+Computation Time: 1.366274 s
 
  Evaluating time step 110.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.604557 s
+Computation Time: 1.341622 s
 
  Evaluating time step 111.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.738660 s
+Computation Time: 0.971009 s
 
  Evaluating time step 112.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.604516 s
+Computation Time: 2.118106 s
 
  Evaluating time step 113.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.294884 s
+Computation Time: 2.064427 s
 
  Evaluating time step 114.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 16.158014 s
+Computation Time: 4.350138 s
 
  Evaluating time step 115.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.590652 s
+Computation Time: 1.958705 s
 
  Evaluating time step 116.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.484160 s
+Computation Time: 1.212256 s
 
  Evaluating time step 117.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.819065 s
+Computation Time: 2.880674 s
 
  Evaluating time step 118.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.580759 s
+Computation Time: 1.191594 s
 
  Evaluating time step 119.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.719228 s
+Computation Time: 1.165643 s
 
  Evaluating time step 120.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.657239 s
+Computation Time: 2.297128 s
 
  Evaluating time step 121.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.517031 s
+Computation Time: 1.689561 s
 
  Evaluating time step 122.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 14.848843 s
+Computation Time: 4.857359 s
 
  Evaluating time step 123.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.191354 s
+Computation Time: 2.722573 s
 
  Evaluating time step 124.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.959902 s
+Computation Time: 1.629782 s
 
  Evaluating time step 125.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.373891 s
+Computation Time: 1.442109 s
 
  Evaluating time step 126.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.260822 s
+Computation Time: 1.039504 s
 
  Evaluating time step 127.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.310671 s
+Computation Time: 1.356512 s
 
  Evaluating time step 128.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.744200 s
+Computation Time: 1.988864 s
 
  Evaluating time step 129.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.523222 s
+Computation Time: 1.538170 s
 
  Evaluating time step 130.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.586820 s
+Computation Time: 1.533225 s
 
  Evaluating time step 131.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.716188 s
+Computation Time: 1.252216 s
 
  Evaluating time step 132.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.581444 s
+Computation Time: 2.070136 s
 
  Evaluating time step 133.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.307403 s
+Computation Time: 2.126544 s
 
  Evaluating time step 134.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 16.096402 s
+Computation Time: 5.232651 s
 
  Evaluating time step 135.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.567754 s
+Computation Time: 1.968716 s
 
  Evaluating time step 136.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.461416 s
+Computation Time: 1.195743 s
 
  Evaluating time step 137.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.838113 s
+Computation Time: 2.830387 s
 
  Evaluating time step 138.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.587709 s
+Computation Time: 1.187551 s
 
  Evaluating time step 139.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.720498 s
+Computation Time: 1.161769 s
 
  Evaluating time step 140.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.697164 s
+Computation Time: 2.302169 s
 
  Evaluating time step 141.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.547538 s
+Computation Time: 1.671121 s
 
  Evaluating time step 142.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 14.960487 s
+Computation Time: 4.858247 s
 
  Evaluating time step 143.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.221602 s
+Computation Time: 2.712321 s
 
  Evaluating time step 144.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.970285 s
+Computation Time: 1.642981 s
 
  Evaluating time step 145.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.367293 s
+Computation Time: 1.441154 s
 
  Evaluating time step 146.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.274140 s
+Computation Time: 1.052957 s
 
  Evaluating time step 147.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.341793 s
+Computation Time: 1.368840 s
 
  Evaluating time step 148.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.796557 s
+Computation Time: 2.009342 s
 
  Evaluating time step 149.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.525467 s
+Computation Time: 1.546860 s
 
  Evaluating time step 150.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.592789 s
+Computation Time: 1.514485 s
 
  Evaluating time step 151.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.730653 s
+Computation Time: 1.233536 s
 
  Evaluating time step 152.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.619341 s
+Computation Time: 2.068115 s
 
  Evaluating time step 153.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.364960 s
+Computation Time: 2.125173 s
 
  Evaluating time step 154.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 16.129923 s
+Computation Time: 5.238417 s
 
  Evaluating time step 155.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.567050 s
+Computation Time: 1.968504 s
 
  Evaluating time step 156.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.441236 s
+Computation Time: 1.207830 s
 
  Evaluating time step 157.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.782354 s
+Computation Time: 2.851041 s
 
  Evaluating time step 158.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.575420 s
+Computation Time: 1.193518 s
 
  Evaluating time step 159.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.703454 s
+Computation Time: 1.186592 s
 
  Evaluating time step 160.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.627398 s
+Computation Time: 2.290206 s
 
  Evaluating time step 161.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.504032 s
+Computation Time: 1.698057 s
 
  Evaluating time step 162.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 14.924940 s
+Computation Time: 4.885087 s
 
  Evaluating time step 163.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.185373 s
+Computation Time: 2.714945 s
 
  Evaluating time step 164.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.968455 s
+Computation Time: 1.612003 s
 
  Evaluating time step 165.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.346420 s
+Computation Time: 1.415607 s
 
  Evaluating time step 166.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.266756 s
+Computation Time: 1.037727 s
 
  Evaluating time step 167.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.276683 s
+Computation Time: 1.350006 s
 
  Evaluating time step 168.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.750150 s
+Computation Time: 1.998941 s
 
  Evaluating time step 169.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.509285 s
+Computation Time: 1.539549 s
 
  Evaluating time step 170.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.588449 s
+Computation Time: 1.491465 s
 
  Evaluating time step 171.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.746645 s
+Computation Time: 1.224163 s
 
  Evaluating time step 172.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.567827 s
+Computation Time: 2.060565 s
 
  Evaluating time step 173.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.301275 s
+Computation Time: 2.114712 s
 
  Evaluating time step 174.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 16.150915 s
+Computation Time: 5.243083 s
 
  Evaluating time step 175.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.629677 s
+Computation Time: 1.955563 s
 
  Evaluating time step 176.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.471454 s
+Computation Time: 1.199298 s
 
  Evaluating time step 177.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.823957 s
+Computation Time: 2.823419 s
 
  Evaluating time step 178.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.561548 s
+Computation Time: 1.186860 s
 
  Evaluating time step 179.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.700631 s
+Computation Time: 1.162339 s
 
  Evaluating time step 180.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.678001 s
+Computation Time: 2.274750 s
 
  Evaluating time step 181.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.551349 s
+Computation Time: 1.725414 s
 
  Evaluating time step 182.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 14.874795 s
+Computation Time: 4.925665 s
 
  Evaluating time step 183.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.205229 s
+Computation Time: 2.712190 s
 
  Evaluating time step 184.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.957298 s
+Computation Time: 1.622513 s
 
  Evaluating time step 185.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.339231 s
+Computation Time: 1.425865 s
 
  Evaluating time step 186.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.263536 s
+Computation Time: 1.046660 s
 
  Evaluating time step 187.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.298440 s
+Computation Time: 1.352480 s
 
  Evaluating time step 188.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.733033 s
+Computation Time: 1.978017 s
 
  Evaluating time step 189.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.508105 s
+Computation Time: 1.539389 s
 
  Evaluating time step 190.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.574768 s
+Computation Time: 1.499871 s
 
  Evaluating time step 191.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.714902 s
+Computation Time: 1.232571 s
 
  Evaluating time step 192.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.570624 s
+Computation Time: 2.044980 s
 
  Evaluating time step 193.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.297057 s
+Computation Time: 2.107730 s
 
  Evaluating time step 194.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 16.095833 s
+Computation Time: 5.196412 s
 
  Evaluating time step 195.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.581175 s
+Computation Time: 1.942513 s
 
  Evaluating time step 196.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.442759 s
+Computation Time: 1.188077 s
 
  Evaluating time step 197.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.797565 s
+Computation Time: 2.826300 s
 
  Evaluating time step 198.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.571656 s
+Computation Time: 1.187770 s
 
  Evaluating time step 199.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.711250 s
+Computation Time: 1.164189 s
 
  Evaluating time step 200.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.661792 s
+Computation Time: 2.275421 s
 
  Evaluating time step 201.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.521735 s
+Computation Time: 1.635668 s
 
  Evaluating time step 202.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 14.899807 s
+Computation Time: 4.816685 s
 
  Evaluating time step 203.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.211542 s
+Computation Time: 2.690189 s
 
  Evaluating time step 204.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.953192 s
+Computation Time: 1.617493 s
 
  Evaluating time step 205.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.345817 s
+Computation Time: 1.412099 s
 
  Evaluating time step 206.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.255971 s
+Computation Time: 1.026487 s
 
  Evaluating time step 207.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.295433 s
+Computation Time: 1.338436 s
 
  Evaluating time step 208.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.786691 s
+Computation Time: 1.960086 s
 
  Evaluating time step 209.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.483959 s
+Computation Time: 1.521312 s
 
  Evaluating time step 210.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.588639 s
+Computation Time: 1.489951 s
 
  Evaluating time step 211.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.726638 s
+Computation Time: 1.221431 s
 
  Evaluating time step 212.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.590235 s
+Computation Time: 2.046731 s
 
  Evaluating time step 213.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.308713 s
+Computation Time: 2.108380 s
 
  Evaluating time step 214.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 16.133106 s
+Computation Time: 5.182816 s
 
  Evaluating time step 215.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 6.583296 s
+Computation Time: 1.942269 s
 
  Evaluating time step 216.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.443266 s
+Computation Time: 1.188810 s
 
  Evaluating time step 217.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 8.778876 s
+Computation Time: 2.818530 s
 
  Evaluating time step 218.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.585809 s
+Computation Time: 1.182130 s
 
  Evaluating time step 219.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.692329 s
+Computation Time: 1.157683 s
 
  Evaluating time step 220.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 7.623132 s
+Computation Time: 2.276496 s
 
  Evaluating time step 221.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 5.521077 s
+Computation Time: 1.639941 s
 
  Evaluating time step 222.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 2.554879 s
+Computation Time: 0.828841 s
 
  Evaluating time step 223.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 2.680170 s
+Computation Time: 0.866747 s
 
  Evaluating time step 224.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.300744 s
+Computation Time: 1.373060 s
 
  Evaluating time step 225.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.439087 s
+Computation Time: 1.083851 s
 
  Evaluating time step 226.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.896607 s
+Computation Time: 0.613935 s
 
  Evaluating time step 227.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 3.980969 s
+Computation Time: 1.277553 s
 
  Evaluating time step 228.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 4.522649 s
+Computation Time: 1.430584 s
 
  Evaluating time step 229.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 2.531767 s
+Computation Time: 0.796208 s
 
  Evaluating time step 230.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.412762 s
+Computation Time: 0.446258 s
 
  Evaluating time step 231.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.112247 s
+Computation Time: 0.356496 s
 
  Evaluating time step 232.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.099898 s
+Computation Time: 0.355218 s
 
  Evaluating time step 233.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.099028 s
+Computation Time: 0.356616 s
 
  Evaluating time step 234.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.104428 s
+Computation Time: 0.355454 s
 
  Evaluating time step 235.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.104315 s
+Computation Time: 0.355771 s
 
  Evaluating time step 236.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.104286 s
+Computation Time: 0.355446 s
 
  Evaluating time step 237.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.101851 s
+Computation Time: 0.356813 s
 
  Evaluating time step 238.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.102966 s
+Computation Time: 0.355209 s
 
  Evaluating time step 239.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.103792 s
+Computation Time: 0.356324 s
 
  Evaluating time step 240.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.111145 s
+Computation Time: 0.354539 s
 
- Total computation Time: 1453.737040 s
+ Total computation Time: 454.499427 s
 
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1858,14 +1254,7 @@ Computation Time: 1.111145 s
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
 Plotting Results!
-No previous simulation found
 Loading simulation table
-NaN/Inf breakpoint hit for DetectImportOptionsText.m on line 90.
-<a href="matlab: opentoline('/usr/local/MATLAB/R2023a/toolbox/matlab/io/text/+matlab/+io/+internal/+functions/DetectImportOptionsText.m',90,1)">90  </a>            nRange = [inf inf inf inf];
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
-if system_dependent('IsDebugMode')==1, dbcont; end
 [Warning: Column headers from the file were modified to make them valid MATLAB identifiers before creating variable names for the table. The original column headers are saved in the VariableDescriptions property.
 Set 'VariableNamingRule' to 'preserve' to use the original column headers as table variable names.] 
 

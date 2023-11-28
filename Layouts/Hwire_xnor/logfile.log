@@ -33,7 +33,7 @@ SCERPA is ready to start.
 
 Launching SCERPA!
 Loading SCERPA
-No previous simulation found
+[Warning: Directory already exists.] 
 Importing Layout...
 Importing Libraries...
 Loading Complete
@@ -48,1204 +48,1204 @@ Starting Time evaluation
 Evaluating time step 1.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.213914 s
+Computation Time: 0.235340 s
 
  Evaluating time step 2.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.338146 s
+Computation Time: 0.332793 s
 
  Evaluating time step 3.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.794708 s
+Computation Time: 0.769953 s
 
  Evaluating time step 4.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.488676 s
+Computation Time: 0.481124 s
 
  Evaluating time step 5.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.978059 s
+Computation Time: 0.958875 s
 
  Evaluating time step 6.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.520969 s
+Computation Time: 0.499710 s
 
  Evaluating time step 7.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.377731 s
+Computation Time: 0.360275 s
 
  Evaluating time step 8.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.446718 s
+Computation Time: 0.425321 s
 
  Evaluating time step 9.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.269258 s
+Computation Time: 0.254750 s
 
  Evaluating time step 10.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.929851 s
+Computation Time: 0.897019 s
 
  Evaluating time step 11.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.488141 s
+Computation Time: 0.478346 s
 
  Evaluating time step 12.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.592257 s
+Computation Time: 0.575510 s
 
  Evaluating time step 13.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.664393 s
+Computation Time: 0.640198 s
 
  Evaluating time step 14.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.907591 s
+Computation Time: 0.883389 s
 
  Evaluating time step 15.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.749123 s
+Computation Time: 0.719926 s
 
  Evaluating time step 16.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.165433 s
+Computation Time: 0.157527 s
 
  Evaluating time step 17.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.532235 s
+Computation Time: 0.506656 s
 
  Evaluating time step 18.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.720085 s
+Computation Time: 0.694277 s
 
  Evaluating time step 19.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.559418 s
+Computation Time: 0.533732 s
 
  Evaluating time step 20.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.746933 s
+Computation Time: 0.711317 s
 
  Evaluating time step 21.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.197881 s
+Computation Time: 0.191333 s
 
  Evaluating time step 22.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.636915 s
+Computation Time: 0.631774 s
 
  Evaluating time step 23.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.828287 s
+Computation Time: 0.786853 s
 
  Evaluating time step 24.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.637259 s
+Computation Time: 0.591672 s
 
  Evaluating time step 25.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.019557 s
+Computation Time: 0.965188 s
 
  Evaluating time step 26.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.622100 s
+Computation Time: 0.599910 s
 
  Evaluating time step 27.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.750190 s
+Computation Time: 0.722795 s
 
  Evaluating time step 28.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.824615 s
+Computation Time: 0.785160 s
 
  Evaluating time step 29.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.609809 s
+Computation Time: 0.589406 s
 
  Evaluating time step 30.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.952526 s
+Computation Time: 0.905054 s
 
  Evaluating time step 31.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.489831 s
+Computation Time: 0.472446 s
 
  Evaluating time step 32.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.600855 s
+Computation Time: 0.571888 s
 
  Evaluating time step 33.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.662189 s
+Computation Time: 0.641726 s
 
  Evaluating time step 34.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.686094 s
+Computation Time: 0.660014 s
 
  Evaluating time step 35.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.745706 s
+Computation Time: 0.717947 s
 
  Evaluating time step 36.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.167166 s
+Computation Time: 0.158047 s
 
  Evaluating time step 37.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.537325 s
+Computation Time: 0.512289 s
 
  Evaluating time step 38.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.719234 s
+Computation Time: 0.688348 s
 
  Evaluating time step 39.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.562731 s
+Computation Time: 0.534573 s
 
  Evaluating time step 40.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.748836 s
+Computation Time: 0.716255 s
 
  Evaluating time step 41.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.188512 s
+Computation Time: 0.182212 s
 
  Evaluating time step 42.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.628450 s
+Computation Time: 0.595300 s
 
  Evaluating time step 43.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.681656 s
+Computation Time: 0.650592 s
 
  Evaluating time step 44.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.603126 s
+Computation Time: 0.578711 s
 
  Evaluating time step 45.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.030033 s
+Computation Time: 0.982597 s
 
  Evaluating time step 46.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.624495 s
+Computation Time: 0.602100 s
 
  Evaluating time step 47.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.749230 s
+Computation Time: 0.725358 s
 
  Evaluating time step 48.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.821151 s
+Computation Time: 0.782734 s
 
  Evaluating time step 49.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.604352 s
+Computation Time: 0.587291 s
 
  Evaluating time step 50.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.949620 s
+Computation Time: 0.905211 s
 
  Evaluating time step 51.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.489208 s
+Computation Time: 0.473826 s
 
  Evaluating time step 52.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.592150 s
+Computation Time: 0.566976 s
 
  Evaluating time step 53.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.662660 s
+Computation Time: 0.631094 s
 
  Evaluating time step 54.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.883073 s
+Computation Time: 0.844766 s
 
  Evaluating time step 55.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.751820 s
+Computation Time: 0.713432 s
 
  Evaluating time step 56.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.162981 s
+Computation Time: 0.159017 s
 
  Evaluating time step 57.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.525710 s
+Computation Time: 0.509061 s
 
  Evaluating time step 58.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.719609 s
+Computation Time: 0.695532 s
 
  Evaluating time step 59.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.557065 s
+Computation Time: 0.538844 s
 
  Evaluating time step 60.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.742759 s
+Computation Time: 0.718286 s
 
  Evaluating time step 61.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.215844 s
+Computation Time: 0.208705 s
 
  Evaluating time step 62.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.621679 s
+Computation Time: 0.600864 s
 
  Evaluating time step 63.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.371233 s
+Computation Time: 1.325530 s
 
  Evaluating time step 64.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.592106 s
+Computation Time: 0.578189 s
 
  Evaluating time step 65.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.045219 s
+Computation Time: 1.010149 s
 
  Evaluating time step 66.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.635744 s
+Computation Time: 0.616076 s
 
  Evaluating time step 67.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.755009 s
+Computation Time: 0.728054 s
 
  Evaluating time step 68.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.832980 s
+Computation Time: 0.793962 s
 
  Evaluating time step 69.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.598221 s
+Computation Time: 0.580386 s
 
  Evaluating time step 70.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.949577 s
+Computation Time: 0.906879 s
 
  Evaluating time step 71.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.489555 s
+Computation Time: 0.475215 s
 
  Evaluating time step 72.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.592560 s
+Computation Time: 0.568707 s
 
  Evaluating time step 73.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.795342 s
+Computation Time: 0.768922 s
 
  Evaluating time step 74.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.860183 s
+Computation Time: 0.839195 s
 
  Evaluating time step 75.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.745743 s
+Computation Time: 0.720764 s
 
  Evaluating time step 76.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.164498 s
+Computation Time: 0.158932 s
 
  Evaluating time step 77.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.528845 s
+Computation Time: 0.498390 s
 
  Evaluating time step 78.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.725027 s
+Computation Time: 0.690709 s
 
  Evaluating time step 79.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.558941 s
+Computation Time: 0.542723 s
 
  Evaluating time step 80.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.747716 s
+Computation Time: 0.713465 s
 
  Evaluating time step 81.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.198389 s
+Computation Time: 0.193030 s
 
  Evaluating time step 82.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.621636 s
+Computation Time: 0.578988 s
 
  Evaluating time step 83.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.801721 s
+Computation Time: 0.766956 s
 
  Evaluating time step 84.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.588255 s
+Computation Time: 0.566904 s
 
  Evaluating time step 85.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.060574 s
+Computation Time: 1.022368 s
 
  Evaluating time step 86.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.642526 s
+Computation Time: 0.609259 s
 
  Evaluating time step 87.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.759449 s
+Computation Time: 0.722135 s
 
  Evaluating time step 88.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.831858 s
+Computation Time: 0.792218 s
 
  Evaluating time step 89.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.599855 s
+Computation Time: 0.575804 s
 
  Evaluating time step 90.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.952625 s
+Computation Time: 0.904658 s
 
  Evaluating time step 91.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.489065 s
+Computation Time: 0.471736 s
 
  Evaluating time step 92.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.632170 s
+Computation Time: 0.601859 s
 
  Evaluating time step 93.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.198670 s
+Computation Time: 1.120282 s
 
  Evaluating time step 94.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.661298 s
+Computation Time: 0.636731 s
 
  Evaluating time step 95.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.744216 s
+Computation Time: 0.716500 s
 
  Evaluating time step 96.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.163959 s
+Computation Time: 0.158889 s
 
  Evaluating time step 97.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.523387 s
+Computation Time: 0.503271 s
 
  Evaluating time step 98.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.714885 s
+Computation Time: 0.695296 s
 
  Evaluating time step 99.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.562119 s
+Computation Time: 0.535614 s
 
  Evaluating time step 100.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.741450 s
+Computation Time: 0.715971 s
 
  Evaluating time step 101.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.199996 s
+Computation Time: 0.190860 s
 
  Evaluating time step 102.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.585818 s
+Computation Time: 0.563402 s
 
  Evaluating time step 103.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.905500 s
+Computation Time: 0.876094 s
 
  Evaluating time step 104.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.881750 s
+Computation Time: 0.851402 s
 
  Evaluating time step 105.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.942673 s
+Computation Time: 0.895048 s
 
  Evaluating time step 106.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.626176 s
+Computation Time: 0.594760 s
 
  Evaluating time step 107.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.770095 s
+Computation Time: 0.732297 s
 
  Evaluating time step 108.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.816625 s
+Computation Time: 0.786330 s
 
  Evaluating time step 109.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.623267 s
+Computation Time: 0.599820 s
 
  Evaluating time step 110.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.581471 s
+Computation Time: 0.560797 s
 
  Evaluating time step 111.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.323126 s
+Computation Time: 0.316334 s
 
  Evaluating time step 112.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.611386 s
+Computation Time: 0.592832 s
 
  Evaluating time step 113.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.772004 s
+Computation Time: 0.744570 s
 
  Evaluating time step 114.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.562731 s
+Computation Time: 0.542867 s
 
  Evaluating time step 115.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.753693 s
+Computation Time: 0.718871 s
 
  Evaluating time step 116.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.166057 s
+Computation Time: 0.157200 s
 
  Evaluating time step 117.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.499707 s
+Computation Time: 0.478971 s
 
  Evaluating time step 118.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.710203 s
+Computation Time: 0.684334 s
 
  Evaluating time step 119.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.533516 s
+Computation Time: 0.508764 s
 
  Evaluating time step 120.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.770428 s
+Computation Time: 0.742595 s
 
  Evaluating time step 121.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.289335 s
+Computation Time: 0.283426 s
 
  Evaluating time step 122.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.504961 s
+Computation Time: 0.487133 s
 
  Evaluating time step 123.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.811987 s
+Computation Time: 0.775473 s
 
  Evaluating time step 124.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.641928 s
+Computation Time: 0.611118 s
 
  Evaluating time step 125.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.068233 s
+Computation Time: 1.013845 s
 
  Evaluating time step 126.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.623272 s
+Computation Time: 0.601561 s
 
  Evaluating time step 127.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.561677 s
+Computation Time: 0.536274 s
 
  Evaluating time step 128.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.658892 s
+Computation Time: 0.628274 s
 
  Evaluating time step 129.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.585966 s
+Computation Time: 0.548834 s
 
  Evaluating time step 130.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.896619 s
+Computation Time: 0.853224 s
 
  Evaluating time step 131.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.369482 s
+Computation Time: 0.358834 s
 
  Evaluating time step 132.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.593541 s
+Computation Time: 0.542737 s
 
  Evaluating time step 133.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.708834 s
+Computation Time: 0.683157 s
 
  Evaluating time step 134.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.561733 s
+Computation Time: 0.540311 s
 
  Evaluating time step 135.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.750634 s
+Computation Time: 0.712810 s
 
  Evaluating time step 136.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.165567 s
+Computation Time: 0.157116 s
 
  Evaluating time step 137.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.496220 s
+Computation Time: 0.479110 s
 
  Evaluating time step 138.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.711016 s
+Computation Time: 0.695522 s
 
  Evaluating time step 139.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.535805 s
+Computation Time: 0.508250 s
 
  Evaluating time step 140.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.769573 s
+Computation Time: 0.744663 s
 
  Evaluating time step 141.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.213570 s
+Computation Time: 0.208110 s
 
  Evaluating time step 142.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.515193 s
+Computation Time: 0.495251 s
 
  Evaluating time step 143.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.817304 s
+Computation Time: 0.780573 s
 
  Evaluating time step 144.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.641087 s
+Computation Time: 0.612099 s
 
  Evaluating time step 145.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.101496 s
+Computation Time: 1.047782 s
 
  Evaluating time step 146.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.667049 s
+Computation Time: 0.646026 s
 
  Evaluating time step 147.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.563227 s
+Computation Time: 0.538772 s
 
  Evaluating time step 148.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.659333 s
+Computation Time: 0.627348 s
 
  Evaluating time step 149.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.578293 s
+Computation Time: 0.550463 s
 
  Evaluating time step 150.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.848777 s
+Computation Time: 0.804378 s
 
  Evaluating time step 151.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.278857 s
+Computation Time: 0.272657 s
 
  Evaluating time step 152.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.566099 s
+Computation Time: 0.537698 s
 
  Evaluating time step 153.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.716083 s
+Computation Time: 0.691630 s
 
  Evaluating time step 154.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.712442 s
+Computation Time: 0.688340 s
 
  Evaluating time step 155.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.744286 s
+Computation Time: 0.711154 s
 
  Evaluating time step 156.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.166397 s
+Computation Time: 0.157399 s
 
  Evaluating time step 157.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.498358 s
+Computation Time: 0.478725 s
 
  Evaluating time step 158.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.711811 s
+Computation Time: 0.683519 s
 
  Evaluating time step 159.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.534643 s
+Computation Time: 0.509364 s
 
  Evaluating time step 160.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.772218 s
+Computation Time: 0.745714 s
 
  Evaluating time step 161.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.185700 s
+Computation Time: 0.176486 s
 
  Evaluating time step 162.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.515588 s
+Computation Time: 0.492816 s
 
  Evaluating time step 163.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.325628 s
+Computation Time: 1.274056 s
 
  Evaluating time step 164.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.637031 s
+Computation Time: 0.615851 s
 
  Evaluating time step 165.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.102730 s
+Computation Time: 1.058757 s
 
  Evaluating time step 166.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.682723 s
+Computation Time: 0.656516 s
 
  Evaluating time step 167.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.561871 s
+Computation Time: 0.540882 s
 
  Evaluating time step 168.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.658476 s
+Computation Time: 0.633631 s
 
  Evaluating time step 169.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.576512 s
+Computation Time: 0.554070 s
 
  Evaluating time step 170.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.839208 s
+Computation Time: 0.811065 s
 
  Evaluating time step 171.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.282118 s
+Computation Time: 0.274087 s
 
  Evaluating time step 172.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.564076 s
+Computation Time: 0.542971 s
 
  Evaluating time step 173.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.727731 s
+Computation Time: 0.699790 s
 
  Evaluating time step 174.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.692713 s
+Computation Time: 0.674924 s
 
  Evaluating time step 175.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.736864 s
+Computation Time: 0.714076 s
 
  Evaluating time step 176.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.166121 s
+Computation Time: 0.157666 s
 
  Evaluating time step 177.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.493043 s
+Computation Time: 0.481265 s
 
  Evaluating time step 178.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.709421 s
+Computation Time: 0.684013 s
 
  Evaluating time step 179.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.533525 s
+Computation Time: 0.508754 s
 
  Evaluating time step 180.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.769934 s
+Computation Time: 0.745840 s
 
  Evaluating time step 181.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.291197 s
+Computation Time: 0.282294 s
 
  Evaluating time step 182.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.512948 s
+Computation Time: 0.495059 s
 
  Evaluating time step 183.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.725979 s
+Computation Time: 0.699664 s
 
  Evaluating time step 184.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.642747 s
+Computation Time: 0.611712 s
 
  Evaluating time step 185.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.094705 s
+Computation Time: 1.047667 s
 
  Evaluating time step 186.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.682347 s
+Computation Time: 0.663232 s
 
  Evaluating time step 187.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.563679 s
+Computation Time: 0.535072 s
 
  Evaluating time step 188.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.658122 s
+Computation Time: 0.628829 s
 
  Evaluating time step 189.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.577083 s
+Computation Time: 0.551388 s
 
  Evaluating time step 190.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.841223 s
+Computation Time: 0.801992 s
 
  Evaluating time step 191.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.280018 s
+Computation Time: 0.272663 s
 
  Evaluating time step 192.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.563139 s
+Computation Time: 0.535936 s
 
  Evaluating time step 193.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.730881 s
+Computation Time: 0.699714 s
 
  Evaluating time step 194.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.693332 s
+Computation Time: 0.672406 s
 
  Evaluating time step 195.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.743676 s
+Computation Time: 0.710683 s
 
  Evaluating time step 196.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.165128 s
+Computation Time: 0.157630 s
 
  Evaluating time step 197.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.495824 s
+Computation Time: 0.479921 s
 
  Evaluating time step 198.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.711678 s
+Computation Time: 0.685564 s
 
  Evaluating time step 199.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.532020 s
+Computation Time: 0.509444 s
 
  Evaluating time step 200.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.769727 s
+Computation Time: 0.742886 s
 
  Evaluating time step 201.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.164158 s
+Computation Time: 0.159852 s
 
  Evaluating time step 202.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.512936 s
+Computation Time: 0.496262 s
 
  Evaluating time step 203.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.730742 s
+Computation Time: 0.705073 s
 
  Evaluating time step 204.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.639448 s
+Computation Time: 0.619656 s
 
  Evaluating time step 205.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 1.097617 s
+Computation Time: 1.046752 s
 
  Evaluating time step 206.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.679015 s
+Computation Time: 0.660316 s
 
  Evaluating time step 207.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.559621 s
+Computation Time: 0.543499 s
 
  Evaluating time step 208.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.656968 s
+Computation Time: 0.635443 s
 
  Evaluating time step 209.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.575239 s
+Computation Time: 0.557060 s
 
  Evaluating time step 210.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.830554 s
+Computation Time: 0.813731 s
 
  Evaluating time step 211.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.280143 s
+Computation Time: 0.272898 s
 
  Evaluating time step 212.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.552902 s
+Computation Time: 0.541741 s
 
  Evaluating time step 213.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.718768 s
+Computation Time: 0.699103 s
 
  Evaluating time step 214.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.692993 s
+Computation Time: 0.671134 s
 
  Evaluating time step 215.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.728380 s
+Computation Time: 0.712492 s
 
  Evaluating time step 216.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.165943 s
+Computation Time: 0.158496 s
 
  Evaluating time step 217.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.497444 s
+Computation Time: 0.481858 s
 
  Evaluating time step 218.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.704709 s
+Computation Time: 0.686679 s
 
  Evaluating time step 219.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.531948 s
+Computation Time: 0.511255 s
 
  Evaluating time step 220.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.762673 s
+Computation Time: 0.745480 s
 
  Evaluating time step 221.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.164401 s
+Computation Time: 0.158964 s
 
  Evaluating time step 222.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.320481 s
+Computation Time: 0.311939 s
 
  Evaluating time step 223.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.322140 s
+Computation Time: 0.312547 s
 
  Evaluating time step 224.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.404692 s
+Computation Time: 0.396352 s
 
  Evaluating time step 225.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.778883 s
+Computation Time: 0.746162 s
 
  Evaluating time step 226.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.163902 s
+Computation Time: 0.159069 s
 
  Evaluating time step 227.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.795858 s
+Computation Time: 0.767704 s
 
  Evaluating time step 228.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.831316 s
+Computation Time: 0.806270 s
 
  Evaluating time step 229.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.399738 s
+Computation Time: 0.384506 s
 
  Evaluating time step 230.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.174801 s
+Computation Time: 0.170981 s
 
  Evaluating time step 231.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.104087 s
+Computation Time: 0.102345 s
 
  Evaluating time step 232.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.105373 s
+Computation Time: 0.101812 s
 
  Evaluating time step 233.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.105119 s
+Computation Time: 0.102222 s
 
  Evaluating time step 234.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.105029 s
+Computation Time: 0.102443 s
 
  Evaluating time step 235.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.104970 s
+Computation Time: 0.102214 s
 
  Evaluating time step 236.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.105109 s
+Computation Time: 0.102285 s
 
  Evaluating time step 237.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.104111 s
+Computation Time: 0.102087 s
 
  Evaluating time step 238.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.104965 s
+Computation Time: 0.102208 s
 
  Evaluating time step 239.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.104836 s
+Computation Time: 0.102207 s
 
  Evaluating time step 240.00 of 240.00
 Disabling Active Region Mode
 Refining solution! ActiveRegion and InteractionRadius disabled!
-Computation Time: 0.104826 s
+Computation Time: 0.102505 s
 
- Total computation Time: 144.535858 s
+ Total computation Time: 138.939637 s
 
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1254,9 +1254,9 @@ Computation Time: 0.104826 s
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
 Plotting Results!
-No previous simulation found
 Loading simulation table
-[Warning: Column headers from the file were modified to make them valid MATLAB identifiers before creating variable names for the table. The original column headers are saved in the VariableDescriptions property.
+[Warning: Column headers from the file were modified to make them valid MATLAB identifiers before creating variable names for the table. The original column headers are saved in
+the VariableDescriptions property.
 Set 'VariableNamingRule' to 'preserve' to use the original column headers as table variable names.] 
 
 

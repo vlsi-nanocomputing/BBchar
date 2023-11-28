@@ -24,10 +24,10 @@ clock_step = 5;
 pSwitch =  linspace(clock_low, clock_high, clock_step); % if step = 1 -> [-2 -1 0 1 2]
 pHold =   linspace(clock_high, clock_high, clock_step); % if step = 1 -> [2 2 2 2 2]
 pRelease =  linspace(clock_high, clock_low, clock_step); % if step = 1 -> [2 1 0 -1 -2]
-pReset =   linspace(clock_low, clock_low, clock_step); % if step = 1 -> [-2 -2 -2 -2 -2]
+driverPara.pReset =   linspace(clock_low, clock_low, clock_step); % if step = 1 -> [-2 -2 -2 -2 -2]
 
 %Cycle to simulate
-pCycle = [pSwitch pHold pRelease pReset]; % if step = 1 -> [-2 -1 0 1 2 -> 2 2 2 2 2 -> 2 1 0 -1 -2 -> -2 -2 -2 -2 -2 ]
+driverPara.pCycle = [pSwitch pHold pRelease driverPara.pReset]; % if step = 1 -> [-2 -1 0 1 2 -> 2 2 2 2 2 -> 2 1 0 -1 -2 -> -2 -2 -2 -2 -2 ]
 
 %% Driver parameters
 driverPara.doubleMolDriver = 1;
@@ -42,7 +42,7 @@ driverPara.driverModes = [{'sweep'}]; %list of the mode for each driver, same or
 
 driverPara.sweepType = 'lin'; %sweep creation following a linspace ('lin') or a logspace ('log') -> Nstep adviced 50
 driverPara.NsweepSteps = 10;
-driverPara.cycleLength = length(pCycle);
+driverPara.cycleLength = length(driverPara.pCycle);
 driverPara.clockStep = clock_step;
 driverPara.NclockRegions = 4; % number of clock regions in the layout 
 driverPara.phasesRepetition = 1; % How many time NclockRegions repeat in the layout?
@@ -98,58 +98,39 @@ charSettings.out_path = outputPath;
 % charSettings.plotOnOut = 0; %Set to '1' if you want to plot the Vout on 'out' (after the last molecule) or to '0' for the Vout on the last molecule
 
 %% Launch the BBchar software
-charSettings.debugMode = 0; % - characteristic visually plotted instead of tabled
-charSettings.LibEvaluation = 0; % Evaluate the behaviour starting from the library
-
-%debugMode LibEvaluation
-%   0           0          --> Characterize the layout creating the .csv
-%   0           1          --> Use the library instead of SCERPA to eval Vout (InOut_eval.m)
-%   1           0          --> Evaluate the layout correctness, launch SCERPA
-%   1           1          --> Test every input combination with libraries (InOut_eval.m)
-
+simulate = 0;
+characterize = 1;
 
 cd(BBcharCodePath)
 circuit.Values_Dr = buildDriver(driverPara);
-%clock matrix (row -> clock zone, column -> time step). 
-circuit.stack_phase = buildClock(driverPara.NclockRegions,driverPara.NsweepSteps,driverPara.phasesRepetition,pReset,pCycle,driverPara.driverModes);
+circuit.stack_phase = buildClock(driverPara);
 if terminationSettings.enableTermination % if the user want to add the termination
-    [circuit, terminationCircuit] = add_termination(circuit,terminationSettings,pCycle,length(pReset)); 
+    [circuit, terminationCircuit] = add_termination(circuit,terminationSettings,driverPara.pCycle,length(driverPara.pReset)); 
 else %termination not enabled
     termination.num = 0;
 end
-    
-%% launcher
-if charSettings.debugMode %debug = 1
-    if charSettings.LibEvaluation %libEval = 1
-%TODO% 
-% test library, plot waveform?        
-    else %libEval = 0
-        if terminationSettings.enableTermination
-            circuit.qllFile = terminationCircuit.filepath;
-            settings.out_path = outputPath;
-            plotSettings.out_path = settings.out_path;
-        end   
-        cd(scerpaPath)
-        diary on
-        SCERPA('generateLaunchView',circuit,settings,plotSettings);
-        %SCERPA('plotSteps',plotSettings)
-        diary off
-        if isfield(settings,'out_path') 
-            movefile('diary',fullfile(settings.out_path,'logfile.log'))
-        end
-        cd(thisPath)
-    end
-
-else %debug = 0
-
-    if charSettings.LibEvaluation %libEval = 1 
-%TODO%
-%Vout = InOut_eval([-0.52 0.52], circuit, charactSettings);
-    else %libEval = 0
-        tic
-        characterization(charSettings,terminationSettings,terminationCircuit,driverPara,circuit.Values_Dr);
-        charTime = toc;
-    end
-
-end
 cd(thisPath)
+   
+% launcher
+if simulate  
+    if terminationSettings.enableTermination
+        circuit.qllFile = terminationCircuit.filepath;
+        settings.out_path = outputPath;
+        plotSettings.out_path = settings.out_path;
+    end
+    cd(scerpaPath)
+    diary on
+    SCERPA('generateLaunchView',circuit,settings,plotSettings);
+    % SCERPA('plotSteps',plotSettings)
+    diary off
+    if isfield(settings,'out_path') 
+        movefile('diary',fullfile(settings.out_path,'logfile.log'))
+    end
+    cd(thisPath)
+elseif characterize
+    cd(BBcharCodePath)
+    tic
+    characterization(charSettings,terminationSettings,terminationCircuit,driverPara,circuit.Values_Dr);
+    charTime = toc;
+    cd(thisPath)
+end

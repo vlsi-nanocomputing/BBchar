@@ -1,5 +1,5 @@
 Number of outputs	8
-Vou_1A_uH	Vou_1B_uH	Vou_1A_uL	Vou_1B_uL	Vou_2A_dH	Vou_2B_dH	Vou_2A_dL	Vou_2B_dL	
+Vou_1A_dH	Vou_1B_dH	Vou_1A_dL	Vou_1B_dL	Vou_2A_uH	Vou_2B_uH	Vou_2A_uL	Vou_2B_uL	
 Latency	4
 Number of clock phases	4
 Maximum driver voltage	1.00 V

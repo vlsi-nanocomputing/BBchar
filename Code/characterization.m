@@ -27,37 +27,38 @@ for oo = 1:terminationCircuit.numOutput
     switch terminationCircuit.stack(oo).angle
         case 0
             if bus_flag
-                out_pos_qll((2*oo-1):(2*oo),:) = [zeros(2,1) terminationCircuit.stack(oo).StartY'  (terminationCircuit.stack(oo).StartX-1)'];
+                % order output as from lowest y to the highest, for bus structure H before L
+                out_pos_qll((2*oo-1):(2*oo),:) = sortrows([zeros(2,1) terminationCircuit.stack(oo).StartY'  (terminationCircuit.stack(oo).StartX-1)'],2);
                 new_outNames{4*oo-3} = sprintf('Vou_%dA_H',oo);
                 new_outNames{4*oo-2} = sprintf('Vou_%dB_H',oo);
                 new_outNames{4*oo-1} = sprintf('Vou_%dA_L',oo);
                 new_outNames{4*oo} = sprintf('Vou_%dB_L',oo);
             else
-                out_pos_qll(oo,:) = [0 terminationCircuit.stack(oo).StartY'  (terminationCircuit.stack(oo).StartX-1)'];
+                out_pos_qll(oo,:) = sortrows([0 terminationCircuit.stack(oo).StartY'  (terminationCircuit.stack(oo).StartX-1)'],2);
                 new_outNames{2*oo-1} = sprintf('Vou_%dA',oo);
                 new_outNames{2*oo} = sprintf('Vou_%dB',oo);
             end
         case 90
             if bus_flag
-                out_pos_qll((2*oo-1):(2*oo),:) = [zeros(2,1) (terminationCircuit.stack(oo).StartY-1)'  terminationCircuit.stack(oo).StartX'];
+                out_pos_qll((2*oo-1):(2*oo),:) = sortrows([zeros(2,1) (terminationCircuit.stack(oo).StartY-1)'  terminationCircuit.stack(oo).StartX'],3);
                 new_outNames{4*oo-3} = sprintf('Vou_%dA_dH',oo);
                 new_outNames{4*oo-2} = sprintf('Vou_%dB_dH',oo);
                 new_outNames{4*oo-1} = sprintf('Vou_%dA_dL',oo);
                 new_outNames{4*oo} = sprintf('Vou_%dB_dL',oo);
             else
-                out_pos_qll(oo,:) = [0 (terminationCircuit.stack(oo).StartY-1)'  terminationCircuit.stack(oo).StartX'];
+                out_pos_qll(oo,:) = sortrows([0 (terminationCircuit.stack(oo).StartY-1)'  terminationCircuit.stack(oo).StartX'],3);
                 new_outNames{2*oo-1} = sprintf('Vou_%dA_d',oo);
                 new_outNames{2*oo} = sprintf('Vou_%dB_d',oo);
             end
         case 270
             if bus_flag
-                out_pos_qll((2*oo-1):(2*oo),:) = [zeros(2,1) (terminationCircuit.stack(oo).StartY+1)'  terminationCircuit.stack(oo).StartX'];
+                out_pos_qll((2*oo-1):(2*oo),:) = sortrows([zeros(2,1) (terminationCircuit.stack(oo).StartY+1)'  terminationCircuit.stack(oo).StartX'],3);
                 new_outNames{4*oo-3} = sprintf('Vou_%dA_uH',oo);
                 new_outNames{4*oo-2} = sprintf('Vou_%dB_uH',oo);
                 new_outNames{4*oo-1} = sprintf('Vou_%dA_uL',oo);
                 new_outNames{4*oo} = sprintf('Vou_%dB_uL',oo);
             else
-                out_pos_qll(oo,:) = [0 (terminationCircuit.stack(oo).StartY+1)'  terminationCircuit.stack(oo).StartX'];
+                out_pos_qll(oo,:) = sortrows([0 (terminationCircuit.stack(oo).StartY+1)'  terminationCircuit.stack(oo).StartX'],3);
                 new_outNames{2*oo-1} = sprintf('Vou_%dA_u',oo);
                 new_outNames{2*oo} = sprintf('Vou_%dB_u',oo);
             end
@@ -78,21 +79,36 @@ for oo = 1:size(out_pos_qll,1)
     outPhase(2*oo) = str2double(phasecell{1,1})+1;
 end
 % extract the column indexes of the table where output voltages are stores
-index = contains(availableRows,outID);
-out_cols = find(index==1);
+% in the correct order
+[tf,loc] = ismember(availableRows,outID);
+[~,p] = sort(loc(tf));
+out_cols = find(tf);
+out_cols = out_cols(p);
 
 %% Get the driver values list from the driver
 [driverValues,index] = unique(cell2mat(drivers(:,2:end)).','rows','stable'); % values are the first occurence
-driverValues = driverValues.';
+in_firsthalf_col = 1:(size(driverValues,2)/2);
+in_secondhalf_col = (size(driverValues,2)/2+1):size(driverValues,2);
+interleaved_idx = [in_secondhalf_col;in_firsthalf_col]; %drivers are reversed in the origianl matrix 
+interleaved_idx = repelem(interleaved_idx,1,2);
+interleaved_idx = interleaved_idx(:)';
+driverValues = driverValues(:,interleaved_idx).';
 Ndrivers = length(driverPara.driverNames);
 for dd = 1:Ndrivers
-    new_driverNames{dd} = sprintf('Vin_%dA',dd);
-    new_driverNames{dd+Ndrivers} = sprintf('Vin_%dB',dd);
+    if bus_flag
+        new_driverNames{4*dd-3} = sprintf('Vin_%dA_H',dd);
+        new_driverNames{4*dd-2} = sprintf('Vin_%dB_H',dd);
+        new_driverNames{4*dd-1} = sprintf('Vin_%dA_L',dd);
+        new_driverNames{4*dd} = sprintf('Vin_%dB_L',dd);
+    else
+        new_driverNames{2*dd-1} = sprintf('Vin_%dA',dd);
+        new_driverNames{2*dd} = sprintf('Vin_%dB',dd);
+    end
 end
 
 %% Extract the time instants (table rows) corresponding with the output in the hold phase for the selected input combination
 %the first time depend on the output phase and the phase repetition in the circuit, the others are separated by a cycle lenght
-time_rows = index + outPhase.*driverPara.clockStep + (driverPara.cycleLength * (driverPara.phasesRepetition -1)); 
+time_rows = index + (outPhase+1).*driverPara.clockStep + (driverPara.cycleLength * (driverPara.phasesRepetition -1)); 
 
 %% Generate the lookup table and save it to the library
 table_header = [new_driverNames new_outNames];
@@ -101,13 +117,13 @@ for comb = 1:size(driverValues,2)
     table_values(comb,:) = [driverValues(:,comb)' diag((table_AI_array(time_rows(comb,:),out_cols)),0)'];
 end
 T = array2table(table_values,'VariableNames',table_header);   %creating the table containing output and drivers
-file_name = strcat(charSettings.LibDeviceName,'.csv');
-path = fullfile(currentDeviceLibPath,file_name);
+path = fullfile(currentDeviceLibPath,'table.csv');
 writetable(T,path);   %creation of the .csv file
 
 %% Generate the additional information file and save it to the library
 %saving the min and max coordinates in y-axis and z-axis (to evaluate the number of cells)
 qllFile = fullfile(charSettings.out_path,strcat(charSettings.LibDeviceName,'.qll'));
+copyfile(qllFile,currentDeviceLibPath)
 circuit = xmlRead(qllFile);
 
 ymin = min([circuit.molecules.y]);

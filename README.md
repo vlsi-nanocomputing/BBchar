@@ -90,20 +90,13 @@ Defines parameters related to the molecular circuit characterization.  All the v
 
 ## Launch the BBchar Software
 Launches the BBchar software with specified settings and parameters. 
-
-The command for launching the program is 
->`BBchar('command',options)`
-
 The possible commands of the program are related to the following three functionalities:
 - **SIMULATE**: Launch a SCERPA simulation with the specified parameters
     - command *'simulate'*
-    - options: 
 - **CHARACTERIZE**: Starting from a previous SCERPA simulation, it characterize the device and store the library files where indicated.
     - command *'characterize'*
-    - options: 
 - **LIBRARY EVALUATION**: Provide the output of the specified device given the input combination.
     - command *'evaluate'*
-    - options:
 
 Depending on the function required, the program automatically 
 1. Checks for debug mode and library mode
@@ -111,17 +104,16 @@ Depending on the function required, the program automatically
 3. Adds termination if enabled.
 4. Executes BBchar software in the specified mode.
 
-
 ## Notes
 Some sections include comments with "TODO" indicating incomplete parts of the code that need to be filled in.
 
 ## Example
 The example below is the launching script for the simulation of a MUX21 circuit
-## launchscript.m
+### launchscript.m
     clear variables
     close all
 
-### Paths definition
+#### Paths definition
     myDataPath = '~';
     BBcharPath = fullfile(myDataPath,'BBchar');
     BBcharCodePath = fullfile(BBcharPath,'Code');
@@ -131,7 +123,7 @@ The example below is the launching script for the simulation of a MUX21 circuit
     outputPath = fullfile(BBcharPath,'Layouts','mux21');
     file = 'mux21.qll';
 
-### Clock signal parameters
+#### Clock signal parameters
     clock_low = -2;
     clock_high = +2;
     clock_step = 5; 
@@ -139,10 +131,10 @@ The example below is the launching script for the simulation of a MUX21 circuit
     pSwitch =  linspace(clock_low, clock_high, clock_step); 
     pHold =   linspace(clock_high, clock_high, clock_step); 
     pRelease =  linspace(clock_high, clock_low, clock_step);
-    pReset =   linspace(clock_low, clock_low, clock_step); 
-    pCycle = [pSwitch pHold pRelease pReset]; 
+    driverPara.pReset =   linspace(clock_low, clock_low, clock_step); 
+    driverPara.pCycle = [pSwitch pHold pRelease pReset]; 
 
- ### Driver parameters
+ #### Driver parameters
     driverPara.doubleMolDriver = 1;
     driverPara.Ninputs = 5; 
     driverPara.driverNames = [{'a'} {'b'} {'s'} {'C0'} {'C1'}]; 
@@ -159,12 +151,12 @@ The example below is the launching script for the simulation of a MUX21 circuit
     driverPara.phasesRepetition = 3; 
     driverPara.maxVoltage = 1; % value in volts
 
-### Termination settings
+#### Termination settings
     terminationSettings.enableTermination = 1;
     terminationSettings.customLength = 0; 
     terminationSettings.busLayout = 1; 
 
- ### SCERPA settings
+ #### SCERPA settings
 **Layout (MagCAD)**
 
     circuit.qllFile = fullfile(pwd,file);
@@ -198,38 +190,48 @@ The example below is the launching script for the simulation of a MUX21 circuit
         plotSettings.out_path = settings.out_path;
     end
 
-### Characterization settings
+#### Characterization settings
     charSettings.LibPath = libraryPath;
     charSettings.LibDeviceName = 'mux21';
     charSettings.out_path = outputPath;
    
-### Launch the BBchar software
-    cd(BBcharCodePath)
-    BBchar('simulate',circuit,setting,plotSettings,)
-    cd(thisPath)
-    
+#### Launch the BBchar software
+    simulate = 1;
+    characterize = 0;
+
     circuit.Values_Dr = buildDriver(driverPara);
-    circuit.stack_phase = buildClock(driverPara.NclockRegions,driverPara.NsweepSteps,driverPara.phasesRepetition,pReset,pCycle,driverPara.driverModes);
-    
-    if terminationSettings.enableTermination 
-        [circuit, terminationCircuit] = add_termination(circuit,terminationSettings,pCycle,length(pReset)); 
+    circuit.stack_phase = buildClock(driverPara);
+    if terminationSettings.enableTermination % if the user want to add the termination
+        [circuit, terminationCircuit] = add_termination(circuit,terminationSettings,driverPara.pCycle,length(pReset)); 
     else %termination not enabled
         termination.num = 0;
     end
         
-    if simulationMode
+    % launcher
+    if simulate  
         if terminationSettings.enableTermination
             circuit.qllFile = terminationCircuit.filepath;
             settings.out_path = outputPath;
             plotSettings.out_path = settings.out_path;
-        end   
+        end
         cd(scerpaPath)
+        diary on
         SCERPA('generateLaunchView',circuit,settings,plotSettings);
+        % SCERPA('plotSteps',plotSettings)
+        diary off
+        if isfield(settings,'out_path') 
+            movefile('diary',fullfile(settings.out_path,'logfile.log'))
+        end
         cd(thisPath)
-    elseif characterizeMode
+    elseif characterize
+        cd(BBcharCodePath)
+        tic
         characterization(charSettings,terminationSettings,terminationCircuit,driverPara,circuit.Values_Dr);
-    elseif libEvalMode
-        %Vout = InOut_eval([-0.52 0.52], circuit, charactSettings);
+        charTime = toc;
+        cd(thisPath)
     end
-    cd(thisPath)
+
+The example below is the launching script for the evaluation of a NAND using the library.
+
+### evaluate.m
 
