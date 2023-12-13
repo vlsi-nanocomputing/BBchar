@@ -12,10 +12,6 @@ The provided code is a MATLAB program for characterizing and simulating the beha
 - automatically characterize the circuit in order to provide a look-up-table with the input/output description plus some additional informations regarding timing and area;
 - provide the output of a circuit in the library given a geneic combination of the inputs.
 
-Please refer to the following article for a theoretical explanation.
-
-> *Beretta G., Ardesi Y., Graziano M. and Piccinini G., "Library-Based Simulations of Molecular
-Field-Coupling Nanocomputing Circuits", IEEE Access (submitted).*
 
 Below is the documentation for the launching script code. 
 
@@ -282,3 +278,9 @@ The example below is the launching script for the evaluation of a MUX21 using th
     fprintf("\nMean error: %e\nMin error: %e\nMax error: %e\n\n",error_avg,error_min,error_max);
 
     cd(thisPath)
+
+
+## Acknoledgment
+We extend our heartfelt appreciation to all contributors whose dedication and expertise have been instrumental in the development of the code, enriching our project with diverse perspectives and invaluable contributions. 
+
+In casual order: Flavio Lupoli, Erik Lo Grasso.
