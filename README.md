@@ -1,3 +1,8 @@
+
+
+[![DOI](https://zenodo.org/badge/731039379.svg)](https://zenodo.org/doi/10.5281/zenodo.10369741)
+
+
 # BBchar Code Documentation
 > Author: **Giuliana Beretta**
 
