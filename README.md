@@ -280,7 +280,7 @@ The example below is the launching script for the evaluation of a MUX21 using th
     cd(thisPath)
 
 
-## Acknoledgment
+## Acknowledgments
 We extend our heartfelt appreciation to all contributors whose dedication and expertise have been instrumental in the development of the code, enriching our project with diverse perspectives and invaluable contributions. 
 
 In casual order: Flavio Lupoli, Erik Lo Grasso.
